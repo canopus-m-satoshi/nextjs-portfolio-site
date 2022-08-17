@@ -1,15 +1,17 @@
+import styles from 'styles/layout.module.css'
+
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className={styles.wrapper}>
       <Header />
 
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
 
       <Footer />
-    </>
+    </div>
   )
 }
 export default Layout

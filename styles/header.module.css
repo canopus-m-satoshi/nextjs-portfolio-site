@@ -1,0 +1,7 @@
+.header {
+  padding-top: calc(var(--display) * 0.1);
+}
+
+.flexContainer {
+  composes: spaceBetween from 'styles/utils.module.css';
+}
