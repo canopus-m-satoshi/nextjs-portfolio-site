@@ -1,5 +1,5 @@
 .wrapper {
-  padding: var(--space-sm) 0;
+  margin-top: var(--space-md);
   background-color: var(--gray-25);
 }
 
