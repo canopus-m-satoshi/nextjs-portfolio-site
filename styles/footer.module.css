@@ -1,9 +1,6 @@
 .wrapper {
   padding: var(--space-sm) 0;
   background-color: var(--gray-10);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 .flexContainer {
