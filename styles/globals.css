@@ -6,7 +6,8 @@
   --gray-50: #707070;
   --gray-75: #444444;
   --black: #222222;
-  --accent: #0d87e0;
+  --main: #ece0c6;
+  --accent: #f4583d;
 
   /* タイポグラフィ（フォントサイズ） */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem); /* 16-18px */
@@ -28,7 +29,8 @@
 
 /* 基本設定 */
 body {
-  color: var(--black);
+  color: var(--white);
+  background-color: var(--black);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
   font-size: var(--body);

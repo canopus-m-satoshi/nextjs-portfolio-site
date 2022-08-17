@@ -21,6 +21,9 @@
 .links a {
   text-decoration: underline;
   transition-duration: 300ms;
+  font-weight: 700;
+  display: flex;
+  column-gap: 0.3em;
 }
 
 /* ホバー */
