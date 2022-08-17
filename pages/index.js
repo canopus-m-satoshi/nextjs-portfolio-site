@@ -5,6 +5,9 @@ import Hero from '@/components/hero'
 import Meta from '@/components/meta'
 import Link from 'next/link'
 
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default function Home() {
   return (
     <Container>
@@ -13,6 +16,7 @@ export default function Home() {
         <Hero
           title="CANOPUS"
           subtitle="Portfolio Site of Ssatohsi Matsushima"
+          textCenter
         />
         <style jsx>{`
           .lead {
@@ -29,16 +33,28 @@ export default function Home() {
 
         <div className={styles.links}>
           <Link href="/about">
-            <a>To About ME</a>
+            <a>
+              <span>To About</span>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </a>
           </Link>
           <Link href="/blog">
-            <a>To Blog</a>
+            <a>
+              <span>To Blog</span>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </a>
           </Link>
           <Link href="/work">
-            <a>To Works</a>
+            <a>
+              <span>To Works</span>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </a>
           </Link>
           <Link href="/contact">
-            <a>To Contact</a>
+            <a>
+              <span>To Contact</span>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </a>
           </Link>
         </div>
       </main>

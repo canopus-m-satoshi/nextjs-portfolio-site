@@ -11,11 +11,17 @@
   font-size: var(--display);
   font-weight: 900;
   letter-spacing: 0.05em;
+  color: var(--sub);
+}
+
+.subtitleCenter {
+  font-size: var(--small-heading2);
+  text-align: center;
 }
 
 .subtitle {
   font-size: var(--small-heading2);
-  text-align: center;
+  color: var(--sub);
 }
 
 /* image */

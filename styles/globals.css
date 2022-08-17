@@ -6,8 +6,8 @@
   --gray-50: #707070;
   --gray-75: #444444;
   --black: #222222;
-  --main: #ece0c6;
   --accent: #f4583d;
+  --sub: #ece0c6;
 
   /* タイポグラフィ（フォントサイズ） */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem); /* 16-18px */

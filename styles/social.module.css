@@ -3,3 +3,24 @@
   gap: 1.5em;
   font-size: var(--icon-size, 24px);
 }
+
+.list a {
+  transition-duration: 300ms;
+}
+
+/* ホバー */
+@media (hover: hover) {
+  .list a:hover {
+    color: var(--accent);
+  }
+}
+
+@media (hover: none) {
+  .list a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .list a:active {
+    color: var(--accent);
+  }
+}
