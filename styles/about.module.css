@@ -1,0 +1,27 @@
+.boxWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.box {
+}
+
+.list > li {
+  margin: calc(var(--display) * 0.07) 0;
+}
+
+.title {
+  font-size: var(--heading1);
+  margin: var(--space-xs) 0;
+}
+
+.titleSmall {
+  font-size: var(--heading2);
+}
+
+.note {
+  margin: var(--space-xs) 0;
+}
