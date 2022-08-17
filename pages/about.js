@@ -12,8 +12,8 @@ export default function About() {
   return (
     <Container>
       <Meta
-        pageTitle="アバウト"
-        pageDesc="About Development Archives"
+        pageTitle="About"
+        pageDesc="About Canopus"
         pageImg={eyecatch.src}
         pageImgW={eyecatch.width}
         pageImgH={eyecatch.height}
