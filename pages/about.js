@@ -126,7 +126,7 @@ export default function About() {
             <p className={styles.note}>
               Wordpressは実務経験があります。
               <br />
-              それ以外は独学・個人でのアプリ制作などの経験があります。
+              それ以外は独学・個人でのアプリ制作などの経験があります。このサイトはmicroCMSを使用して作られています。
             </p>
           </div>
 
