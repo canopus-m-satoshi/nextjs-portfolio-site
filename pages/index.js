@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero
           title="CANOPUS"
-          subtitle="Portfolio Site of Ssatohsi Matsushima"
+          subtitle="Portfolio Site of Satoshi Matsushima"
           textCenter
         />
         <style jsx>{`

@@ -114,7 +114,7 @@ export default function About() {
 
               <h5 className={styles.noteTitle}>Note</h5>
               <p className={styles.note}>
-                Windows OS、Mac OS共に実も経験があります。
+                Windows OS、Mac OS共に実務経験があります。
                 GulpやWebpack等のツールはチュートリアルを見た程度です。
               </p>
             </div>
