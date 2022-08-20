@@ -48,8 +48,8 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link href="/works">
-            <a onClick={closeNav}>Works</a>
+          <Link href="/work">
+            <a onClick={closeNav}>Work</a>
           </Link>
         </li>
         <li>
