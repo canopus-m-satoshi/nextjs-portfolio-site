@@ -34,26 +34,26 @@ export default function Home() {
         <div className={styles.links}>
           <Link href="/about">
             <a>
+              <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
               <span>To About</span>
-              <FontAwesomeIcon icon={faChevronRight} />
             </a>
           </Link>
           <Link href="/blog">
             <a>
+              <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
               <span>To Blog</span>
-              <FontAwesomeIcon icon={faChevronRight} />
             </a>
           </Link>
           <Link href="/work">
             <a>
+              <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
               <span>To Works</span>
-              <FontAwesomeIcon icon={faChevronRight} />
             </a>
           </Link>
           <Link href="/contact">
             <a>
+              <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
               <span>To Contact</span>
-              <FontAwesomeIcon icon={faChevronRight} />
             </a>
           </Link>
         </div>
