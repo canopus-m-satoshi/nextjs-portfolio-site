@@ -2,7 +2,7 @@
   composes: sideBySideCenter from 'styles/utils.module.css';
 }
 
-.main {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;

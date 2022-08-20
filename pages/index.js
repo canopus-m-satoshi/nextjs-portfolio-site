@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Container>
       <Meta />
-      <main className={styles.main}>
+      <div className={styles.wrapper}>
         <Hero
           title="CANOPUS"
           subtitle="Portfolio Site of Satoshi Matsushima"
@@ -57,7 +57,7 @@ export default function Home() {
             </a>
           </Link>
         </div>
-      </main>
+      </div>
     </Container>
   )
 }
