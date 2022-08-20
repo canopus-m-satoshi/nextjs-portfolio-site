@@ -76,3 +76,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* footer を下に固定 */
+body #__next > div {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
+}
