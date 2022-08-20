@@ -3,10 +3,7 @@ import styles from '../styles/home.module.css'
 import Container from '@/components/container'
 import Hero from '@/components/hero'
 import Meta from '@/components/meta'
-import Link from 'next/link'
-
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import LinkButton from '@/components/linkButton'
 
 export default function Home() {
   return (
@@ -32,30 +29,10 @@ export default function Home() {
         </div>
 
         <div className={styles.links}>
-          <Link href="/about">
-            <a>
-              <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
-              <span>To About</span>
-            </a>
-          </Link>
-          <Link href="/blog">
-            <a>
-              <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
-              <span>To Blog</span>
-            </a>
-          </Link>
-          <Link href="/work">
-            <a>
-              <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
-              <span>To Works</span>
-            </a>
-          </Link>
-          <Link href="/contact">
-            <a>
-              <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
-              <span>To Contact</span>
-            </a>
-          </Link>
+          <LinkButton href="/about" text="To About" />
+          <LinkButton href="/blog" text="To Blog" />
+          <LinkButton href="/work" text="To Work" />
+          <LinkButton href="/contact" text="To Contact" />
         </div>
       </div>
     </Container>
