@@ -41,6 +41,86 @@ export default function About() {
             私自身も「CANOPUS」という星の様に目立たないがWEB制作を通じて誰かを支えれるような存在でありたいと思っています。
           </p>
         </div>
+
+        <div className={styles.box}>
+          <h3 className={styles.title}>Skills</h3>
+
+          <div className={styles.skillBox}>
+            <div className={styles.skillBoxItem}>
+              <h4 className={styles.titleSmall}>Language</h4>
+
+              <ul className={styles.list}>
+                <li>HTML : 3years</li>
+                <li>CSS(Sass) : 3years</li>
+                <li>JavaScript : 3years</li>
+                <li>jQuery : 3years</li>
+                <li>PHP : 2years</li>
+                <li>React.js : 1year</li>
+                <li>Next.js : 1year</li>
+                <li>Typescript : 2months</li>
+                <li>Express : 2months</li>
+              </ul>
+
+              <h5 className={styles.noteTitle}>Note</h5>
+              <p className={styles.note}>
+                HTML&CSS(Sass),JavaScript,jQuery,PHPは実務経験があります。
+                <br />
+                それ以外は独学・個人でのアプリ制作などの経験があります。
+              </p>
+            </div>
+
+            <div className={styles.skillBoxItem}>
+              <h4 className={styles.titleSmall}>CMS</h4>
+              <ul className={styles.list}>
+                <li>Wordpress : 2years</li>
+                <li>microCMS : 3months</li>
+                <li>GraphCMS : 1months</li>
+              </ul>
+
+              <h5 className={styles.noteTitle}>Note</h5>
+              <p className={styles.note}>
+                Wordpressは実務経験があります。
+                <br />
+                それ以外は独学・個人でのアプリ制作などの経験があります。このサイトはmicroCMSを使用して作られています。
+              </p>
+            </div>
+
+            <div className={styles.skillBoxItem}>
+              <h4 className={styles.titleSmall}>Tool</h4>
+
+              <ul className={styles.list}>
+                <li>Photoshop : 2years</li>
+                <li>Illustrator : 2years</li>
+                <li>Adobe XD : 2months</li>
+                <li>Figma : 2months</li>
+              </ul>
+
+              <h5 className={styles.noteTitle}>Note</h5>
+              <p className={styles.note}>
+                Adobe
+                XD、Figmaで自身のポートフォリオサイトをデザインした経験があります。それ以外のデザインツールについては、デザインカンプとして使用経験あります。（簡単な画像の書き出しなどの経験はできます）
+              </p>
+            </div>
+
+            <div className={styles.skillBoxItem}>
+              <h4 className={styles.titleSmall}>Others</h4>
+
+              <ul className={styles.list}>
+                <li>Windows OS : 7years</li>
+                <li>Mac OS : 3years</li>
+                <li>Gulp : 1year</li>
+                <li>Webpack : 3months</li>
+              </ul>
+
+              <h5 className={styles.noteTitle}>Note</h5>
+              <p className={styles.note}>
+                Windows OS、Mac OS共に実も経験があります。
+                GulpやWebpack等のツールはチュートリアルを見た程度です。
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.box}>
           <h3 className={styles.title}>History</h3>
 
@@ -86,83 +166,6 @@ export default function About() {
               </li>
             </ul>
           </Accordion>
-        </div>
-
-        <div className={styles.box}>
-          <h3 className={styles.title}>Skills</h3>
-
-          <div className={styles.skillBox}>
-            <h4 className={styles.titleSmall}>Language</h4>
-
-            <ul className={styles.list}>
-              <li>HTML : 3years</li>
-              <li>CSS(Sass) : 3years</li>
-              <li>JavaScript : 3years</li>
-              <li>jQuery : 3years</li>
-              <li>PHP : 2years</li>
-              <li>React.js : 1year</li>
-              <li>Next.js : 1year</li>
-              <li>Typescript : 2months</li>
-              <li>Express : 2months</li>
-            </ul>
-
-            <h5 className={styles.noteTitle}>Note</h5>
-            <p className={styles.note}>
-              HTML&CSS(Sass),JavaScript,jQuery,PHPは実務経験があります。
-              <br />
-              それ以外は独学・個人でのアプリ制作などの経験があります。
-            </p>
-          </div>
-
-          <div className={styles.skillBox}>
-            <h4 className={styles.titleSmall}>CMS</h4>
-            <ul className={styles.list}>
-              <li>Wordpress : 2years</li>
-              <li>microCMS : 3months</li>
-              <li>GraphCMS : 1months</li>
-            </ul>
-
-            <h5 className={styles.noteTitle}>Note</h5>
-            <p className={styles.note}>
-              Wordpressは実務経験があります。
-              <br />
-              それ以外は独学・個人でのアプリ制作などの経験があります。このサイトはmicroCMSを使用して作られています。
-            </p>
-          </div>
-
-          <div className={styles.skillBox}>
-            <h4 className={styles.titleSmall}>Tool</h4>
-
-            <ul className={styles.list}>
-              <li>Photoshop : 2years</li>
-              <li>Illustrator : 2years</li>
-              <li>Adobe XD : 2months</li>
-              <li>Figma : 2months</li>
-            </ul>
-
-            <h5 className={styles.noteTitle}>Note</h5>
-            <p className={styles.note}>
-              Adobe
-              XD、Figmaで自身のポートフォリオサイトをデザインした経験があります。それ以外のデザインツールについては、デザインカンプとして使用経験あります。（簡単な画像の書き出しなどの経験はできます）
-            </p>
-          </div>
-
-          <div className={styles.skillBox}>
-            <h4 className={styles.titleSmall}>Others</h4>
-
-            <ul className={styles.list}>
-              <li>Windows OS : 7years</li>
-              <li>Mac OS : 3years</li>
-              <li>Gulp : 1year</li>
-              <li>Webpack : 3months</li>
-            </ul>
-
-            <h5 className={styles.noteTitle}>Note</h5>
-            <p className={styles.note}>
-              Windows OS、Mac OS共に実も経験があります。
-              GulpやWebpack等のツールはチュートリアルを見た程度です。
-            </p>
-          </div>
         </div>
       </div>
     </Container>

@@ -2,17 +2,17 @@
   text-align: center;
 }
 
+.eyecatch span {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 15px 15px 0 var(--sub);
+}
+
 .boxWrap {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-direction: column;
-  row-gap: var(--space-xs);
-}
-
-.box:not(:last-child) {
-  padding-bottom: var(--space-xs);
-  border-bottom: 1px solid var(--white);
+  row-gap: var(--space-md);
 }
 
 .list > li {
@@ -41,7 +41,9 @@
 
 .title::first-letter {
   color: var(--accent);
-  font-size: 1.5em;
+  font-size: 2em;
+  opacity: 0.65;
+  text-shadow: 2px 2px 1px #eee;
 }
 
 .titleSmall {
@@ -74,7 +76,14 @@
 }
 
 .skillBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.skillBoxItem {
+  width: 48.4%;
   border: 1px solid;
-  margin-top: var(--space-xs);
   padding: var(--space-xs);
 }
