@@ -15,12 +15,12 @@
 }
 
 .subtitleCenter {
-  font-size: var(--small-heading2);
+  font-size: var(--small-heading3);
   text-align: center;
 }
 
 .subtitle {
-  font-size: var(--small-heading2);
+  font-size: var(--small-heading2qs);
   color: var(--white);
 }
 
