@@ -90,11 +90,11 @@
   }
 }
 
+/* ホバー */
 .list a {
-  transition-duration: 300ms;
+  transition-duration: 0.3s;
 }
 
-/* ホバー */
 @media (hover: hover) {
   .list a:hover {
     color: var(--accent);
