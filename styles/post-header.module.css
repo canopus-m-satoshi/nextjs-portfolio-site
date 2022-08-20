@@ -9,6 +9,17 @@
 .subtitle {
   font-size: var(--small-heading2);
   font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.subtitle::before {
+  content: '';
+  display: inline-block;
+  width: calc(var(--display) * 0.1);
+  height: 2px;
+  margin-right: calc(var(--display) * 0.1);
+  background: var(--sub);
 }
 
 .title {
