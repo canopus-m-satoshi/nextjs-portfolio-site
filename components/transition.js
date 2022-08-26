@@ -1,5 +1,5 @@
 // CSS for framer emotion
-import '../styles/transition.css'
+import styles from 'styles/transition.module.css'
 
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 
@@ -57,7 +57,7 @@ const Transition = ({ children }) => {
   }
 
   return (
-    <div className="effect-3">
+    <div className={styles.effect3}>
       <AnimatePresence initial={false} exitBeforeEnter>
         <motion.div
           key={asPath}

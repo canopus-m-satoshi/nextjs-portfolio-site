@@ -1,14 +1,14 @@
 /* Prevent scrollbar during animation */
-.effect-1,
-.effect-3 {
+.effect1,
+.effect3 {
   overflow: hidden;
 }
 
-.effect-3 {
+.effect3 {
   z-index: 1;
 }
 
-.effect-3::after {
+.effect3::after {
   content: '';
   display: block;
   position: fixed;

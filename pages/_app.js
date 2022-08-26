@@ -1,4 +1,4 @@
-import 'styles/globals.css'
+import '../styles/globals.css'
 
 // Font Awesomeの設定
 import '@fortawesome/fontawesome-svg-core/styles.css'
