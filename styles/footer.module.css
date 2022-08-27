@@ -6,5 +6,5 @@
 
 .flexContainer {
   composes: sideBySideCenter from './utils.module.css';
-  gap: 2em;
+  gap: var(--space-xs);
 }

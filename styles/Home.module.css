@@ -11,6 +11,24 @@
 
 .links {
   padding: calc(var(--display) * 0.5) 0;
-  gap: 3rem;
-  composes: sideBySideCenter from 'styles/utils.module.css';
+  gap: var(--space-sm);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.links > span {
+  flex: 0 0 40%;
+}
+
+@media (min-width: 768px) {
+  .links {
+    composes: sideBySideCenter from 'styles/utils.module.css';
+  }
+
+  .links > span {
+    flex: auto;
+  }
 }

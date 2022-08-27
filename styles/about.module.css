@@ -15,11 +15,18 @@
   row-gap: var(--space-md);
 }
 
+.list {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
 .list > li {
-  margin: calc(var(--display) * 0.09) 0;
   padding-left: var(--space-xs);
   position: relative;
+  flex: 1 0 46%;
 }
+
 .list > li::before {
   content: '';
   display: inline-block;
@@ -36,7 +43,7 @@
 .title {
   font-size: var(--heading1);
   margin: 0 0 var(--space-xs);
-  color: var(--white);
+  color: var(--sub);
 }
 
 .title::first-letter {
@@ -83,7 +90,13 @@
 }
 
 .skillBoxItem {
-  width: 48.4%;
+  width: auto;
   border: 1px solid;
   padding: var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .skillBoxItem {
+    width: 48%;
+  }
 }

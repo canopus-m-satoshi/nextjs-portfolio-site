@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/home.module.css'
 
 import Container from '@/components/container'
 import Hero from '@/components/hero'
@@ -29,10 +29,10 @@ export default function Home() {
         </div>
 
         <div className={styles.links}>
-          <LinkButton href="/about" text="To About" />
-          <LinkButton href="/blog" text="To Blog" />
-          <LinkButton href="/work" text="To Work" />
-          <LinkButton href="/contact" text="To Contact" />
+          <LinkButton href="/about" text="About" />
+          <LinkButton href="/blog" text="Blog" />
+          <LinkButton href="/work" text="Work" />
+          <LinkButton href="/contact" text="Contact" />
         </div>
       </div>
     </Container>
