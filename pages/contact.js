@@ -14,18 +14,18 @@ export default function Contact() {
       <Hero title="Contact" subtitle="お問合せはこちらから" />
 
       <p>
-        仕事のご依頼、全ての制作実績を閲覧希望の方は下記のリンクよりお問い合わせください。
+        仕事のご依頼、全ての制作実績を閲覧希望の方はコンタクトフォームよりお問い合わせください。
         <br />
-        *Google Formへ遷移します
+        ※外部サイト【Google Form】へ移動します。
       </p>
 
       <div
         style={{
-          marginTop: 'var(--space-sm)',
+          marginTop: 'var(--space-xs)',
           marginInline: 'auto',
           width: 'fit-content',
         }}>
-        <LinkButton href={formLink} text="コンタクトフォームへ" />
+        <LinkButton href={formLink} text="Google Formへ" />
       </div>
     </Container>
   )

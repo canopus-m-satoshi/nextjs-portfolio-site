@@ -5,6 +5,8 @@ import Meta from '@/components/meta'
 import LinkButton from '@/components/linkButton'
 
 export default function Work() {
+  const workLink =
+    'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
   const formLink =
     'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
 
@@ -14,16 +16,30 @@ export default function Work() {
       <Hero title="Work" subtitle="制作実績紹介" />
 
       <p>
-        正社員時代に制作したサイト、契約上一般公開できないサイトが多数ございます。
+        制作実績につきましては下記のサイトにて閲覧できます。
         <br />
-        範囲を限定的に公開している制作サイトにつきましては下記サイトにて閲覧することが可能です。
+        ※外部サイト【RESUME（レジュメ）】へ移動します。
+      </p>
+      <div
+        style={{
+          marginTop: 'var(--space-xs)',
+          marginInline: 'auto',
+          width: 'fit-content',
+        }}>
+        <LinkButton href={workLink} text="制作実績公開サイトへ" />
+      </div>
+      <br />
+      <br />
+      <br />
+      <p>
+        ※正社員時代に制作したサイト、フリーランス時代に制作させていただいたサイトの多くは契約上一般公開できません。
         <br />
-        閲覧希望の方はお手数おかけしますがコンタクトフォームより閲覧希望の旨をお伝えください。
+        限定的に公開している制作サイトの閲覧を希望する方はお手数おかけしますが本サイトのコンタクトフォームもしくはRESUME（レジュメ）サイトのコンタクトフォームより閲覧希望の旨をお伝えください。
       </p>
 
       <div
         style={{
-          marginTop: 'var(--space-sm)',
+          marginTop: 'var(--space-xs)',
           marginInline: 'auto',
           width: 'fit-content',
         }}>
