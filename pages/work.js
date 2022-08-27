@@ -5,8 +5,7 @@ import Meta from '@/components/meta'
 import LinkButton from '@/components/linkButton'
 
 export default function Work() {
-  const workLink =
-    'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
+  const workLink = 'https://www.resume.id/canopus/works'
   const formLink =
     'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
 

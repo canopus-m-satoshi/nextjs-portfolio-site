@@ -1,11 +1,7 @@
 import styles from 'styles/social.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faTwitter,
-  faFacebookF,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Social = ({ iconSize = 'initial' }) => {
   return (
@@ -14,12 +10,6 @@ const Social = ({ iconSize = 'initial' }) => {
         <a href="https://twitter.com/canopus_sato">
           <FontAwesomeIcon icon={faTwitter} />
           <span className="sr-only">Twitter</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.fascebook.com/">
-          <FontAwesomeIcon icon={faFacebookF} />
-          <span className="sr-only">Facebook</span>
         </a>
       </li>
       <li>
