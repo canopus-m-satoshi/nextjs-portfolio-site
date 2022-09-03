@@ -4,9 +4,13 @@ import styles from 'styles/transition.module.css'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 
 import { useRouter } from 'next/router'
+import { useTransitionFix } from 'lib/useTransitionFix'
 
 const Transition = ({ children }) => {
   const { asPath } = useRouter()
+
+  // Measure to transition animation
+  const transitionCallback = useTransitionFix()
 
   // animation ON/OFF
   const shouldReduceMotion = useReducedMotion()
@@ -31,7 +35,10 @@ const Transition = ({ children }) => {
 
   return (
     <div className={styles.motionEffect}>
-      <AnimatePresence initial={false} exitBeforeEnter>
+      <AnimatePresence
+        initial={false}
+        exitBeforeEnter
+        onExitComplete={transitionCallback}>
         <motion.div
           key={asPath}
           variants={!shouldReduceMotion ? variants : null}
