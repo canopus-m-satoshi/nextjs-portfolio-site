@@ -13,7 +13,7 @@ export default function About() {
   return (
     <Container>
       <Meta
-        pageTitle="About"
+        pageTitle="Abouts"
         pageDesc="About Canopus"
         pageImg={eyecatch.src}
         pageImgW={eyecatch.width}
