@@ -1,12 +1,12 @@
-import { getAllCategories, getAllPostsByCategory } from 'lib/api'
 import Meta from 'components/meta'
+import { getAllCategories, getAllPostsByCategory } from 'lib/api'
+// ローカル代替アイキャッチ画像
+import { eyecatchLocal } from 'lib/constants'
+import { getPlaiceholder } from 'plaiceholder'
+
 import Container from '@/components/container'
 import PostHeader from '@/components/post-header'
 import Posts from '@/components/posts'
-import { getPlaiceholder } from 'plaiceholder'
-
-// ローカル代替アイキャッチ画像
-import { eyecatchLocal } from 'lib/constants'
 
 export default function Category({ name, posts }) {
   return (

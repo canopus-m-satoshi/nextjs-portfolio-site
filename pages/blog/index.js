@@ -1,11 +1,12 @@
-import Meta from '@/components/meta'
 import Container from 'components/container'
-import Hero from '@/components/hero'
 import { getAllPosts } from 'lib/api'
-import Posts from '@/components/posts'
-import { getPlaiceholder } from 'plaiceholder'
 // ローカル代替アイキャッチ画像
 import { eyecatchLocal } from 'lib/constants'
+import { getPlaiceholder } from 'plaiceholder'
+
+import Hero from '@/components/hero'
+import Meta from '@/components/meta'
+import Posts from '@/components/posts'
 
 export default function Blog({ posts }) {
   return (

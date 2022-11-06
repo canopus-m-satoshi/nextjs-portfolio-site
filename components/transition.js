@@ -1,10 +1,8 @@
 // CSS for framer emotion
-import styles from 'styles/transition.module.css'
-
-import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
-
-import { useRouter } from 'next/router'
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { useTransitionFix } from 'lib/useTransitionFix'
+import { useRouter } from 'next/router'
+import styles from 'styles/transition.module.css'
 
 const Transition = ({ children }) => {
   const { asPath } = useRouter()

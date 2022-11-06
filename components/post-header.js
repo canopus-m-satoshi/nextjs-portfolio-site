@@ -1,6 +1,7 @@
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from 'styles/post-header.module.css'
+
 import ConvertDate from './convert-date'
 
 const PostHeader = ({ title, subtitle, publish = '' }) => {

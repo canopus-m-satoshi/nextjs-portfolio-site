@@ -1,13 +1,12 @@
-import Head from 'next/head'
-
 // サイトに関する情報
-import { siteMeta } from 'lib/constants'
-import { useRouter } from 'next/router'
-const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
-  siteMeta
-
 // 汎用OGP画像
 import siteImg from 'images/ogp.jpg'
+import { siteMeta } from 'lib/constants'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
+
+const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
+  siteMeta
 
 const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
   // ページのタイトル
