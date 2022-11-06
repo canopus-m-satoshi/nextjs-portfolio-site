@@ -1,8 +1,7 @@
 import Container from '@/components/container'
 import Hero from '@/components/hero'
-import Meta from '@/components/meta'
-
 import LinkButton from '@/components/linkButton'
+import Meta from '@/components/meta'
 
 export default function Work() {
   const workLink = 'https://www.resume.id/canopus/works'

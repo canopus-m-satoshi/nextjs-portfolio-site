@@ -1,6 +1,6 @@
-import { useAnimation, motion } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect, useRef } from 'react'
 import { useInView } from 'react-intersection-observer'
-import { useRef, useEffect } from 'react'
 
 const variants = {
   visible: {

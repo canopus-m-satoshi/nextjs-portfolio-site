@@ -1,13 +1,13 @@
-import styles from '../styles/about.module.css'
-
-import Container from '@/components/container'
-import Hero from '@/components/hero'
-import Meta from '@/components/meta'
-
 import eyecatch from 'images/my_picture.jpg'
 import Image from 'next/image'
+
 import Accordion from '@/components/accordion'
+import Container from '@/components/container'
+import Hero from '@/components/hero'
 import InViewMotion from '@/components/inViewMotion'
+import Meta from '@/components/meta'
+
+import styles from '../styles/about.module.css'
 
 export default function About() {
   return (

@@ -1,5 +1,5 @@
-import styles from 'styles/hero.module.css'
 import Image from 'next/image'
+import styles from 'styles/hero.module.css'
 
 export default function Hero({ title, subtitle, textCenter = false }) {
   return (

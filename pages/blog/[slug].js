@@ -1,23 +1,23 @@
-import { getPostBySlug, getAllSlugs } from 'lib/api'
+import { getAllSlugs, getPostBySlug } from 'lib/api'
+// ローカル代替アイキャッチ画像
+import { eyecatchLocal } from 'lib/constants'
 import { extractText } from 'lib/extract-text'
-import Meta from '@/components/meta'
+import { prevNextPost } from 'lib/prev-next-post'
+import Image from 'next/image'
+import { getPlaiceholder } from 'plaiceholder'
+
 import Container from '@/components/container'
-import PostHeader from '@/components/post-header'
+import ConvertBody from '@/components/convert-body'
+import Meta from '@/components/meta'
+import Pagination from '@/components/pagination'
 import PostBody from '@/components/post-body'
+import PostCategories from '@/components/post-categories'
+import PostHeader from '@/components/post-header'
 import {
   TwoColumn,
   TwoColumnMain,
   TwoColumnSidebar,
 } from '@/components/two-column'
-import Image from 'next/image'
-// ローカル代替アイキャッチ画像
-import { eyecatchLocal } from 'lib/constants'
-
-import ConvertBody from '@/components/convert-body'
-import PostCategories from '@/components/post-categories'
-import { getPlaiceholder } from 'plaiceholder'
-import { prevNextPost } from 'lib/prev-next-post'
-import Pagination from '@/components/pagination'
 
 const Post = ({
   title,

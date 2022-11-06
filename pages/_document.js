@@ -1,6 +1,6 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-
 import { siteMeta } from 'lib/constants'
+import { Head, Html, Main, NextScript } from 'next/document'
+
 const { siteLang } = siteMeta
 
 const Document = () => {
