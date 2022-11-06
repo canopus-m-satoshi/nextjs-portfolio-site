@@ -101,7 +101,7 @@ export default function About() {
                 <h5 className={styles.noteTitle}>Note</h5>
                 <p className={styles.note}>
                   Adobe
-                  XD、Figmaで自身のポートフォリオサイトをデザインした経験があります。それ以外のデザインツールについては、デザインカンプとして使用経験あります。（簡単な画像の書き出しなどの経験はできます）
+                  XD、Figmaで自身のポートフォリオサイトをデザインした経験があります。それ以外のデザインツールについては、デザインカンプとして使用経験あります。（簡単な画像の書き出しなどのは可能です）
                 </p>
               </div>
 
@@ -136,7 +136,6 @@ export default function About() {
                   <p>
                     大学卒業後、学生ビザとワーキングホリデービザを利用し、カナダで語学留学を経験する
                   </p>
-                  <p>帰国後のTOEICテストで850点獲得する</p>
                 </li>
                 <li>
                   <p>2018 MAY - 2019 AUG</p>
