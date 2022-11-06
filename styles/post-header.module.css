@@ -24,6 +24,7 @@
 
 .title {
   --stack-space: 0.2em;
+  font-size: calc(var(--heading1) * 0.8);
 }
 
 .publish {
