@@ -40,7 +40,8 @@ const Post = ({
       />
       <article>
         <PostHeader title={title} subtitle="Blog Article" publish={publish} />
-        <figure style={{ textAlign: 'center' }}>
+        <figure
+          style={{ textAlign: 'center', width: '60%', marginInline: 'auto' }}>
           <Image
             // Imageコンポーネントにkey属性を持たせ、Imageコンポーネントは記事ごとに異なるコンポーネントであると明示し、記事内のページネーションから遷移時にblurや画像の切り替わり遅延を防ぐ
             key={eyecatch.url}
