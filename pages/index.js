@@ -14,6 +14,7 @@ export default function Home() {
           title="CANOPUS"
           subtitle="Portfolio Site of Satoshi Matsushima"
           textCenter
+          glitchTitle
         />
         <style jsx>{`
           .lead {
