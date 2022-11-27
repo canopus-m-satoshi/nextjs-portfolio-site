@@ -8,6 +8,13 @@ import Meta from '../components/meta'
 import eyecatch from '../images/my_picture.jpg'
 import styles from '../styles/about.module.css'
 
+const from = 2020
+const now = new Date()
+const currentYear = now.getFullYear()
+const currentMonth = now.getMonth()
+
+const pastYear = currentYear - from + 1
+
 export default function About() {
   return (
     <Container>
@@ -32,6 +39,21 @@ export default function About() {
       </figure>
 
       <div className={styles.boxWrap}>
+        <InViewMotion>
+          <div className={styles.box}>
+            <h3 className={styles.title}>About</h3>
+            <p className={styles.description}>
+              都内で活動しているエンジニアです。{currentYear}年{currentMonth}
+              月でエンジニア歴{pastYear}年目になります。
+            </p>
+            <p>
+              都内のWeb制作会社で勤務後、2021年に独立しフリーランスエンジニアとなりました。
+              <br />
+              LPやWordpressを用いたサイト制作を得意としています。
+            </p>
+          </div>
+        </InViewMotion>
+
         <InViewMotion>
           <div className={styles.box}>
             <h3 className={styles.title}>Policy</h3>
@@ -135,7 +157,6 @@ export default function About() {
                   <p>
                     大学卒業後、学生ビザとワーキングホリデービザを利用し、カナダで語学留学を経験する
                   </p>
-                  <p>帰国後のTOEICテストで850点獲得する</p>
                 </li>
                 <li>
                   <p>2018 MAY - 2019 AUG</p>
