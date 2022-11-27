@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import styles from 'styles/nav.module.css'
+
+import styles from '../styles/nav.module.css'
 
 const Nav = () => {
   const [navIsOpen, setNavIsOpen] = useState(false)

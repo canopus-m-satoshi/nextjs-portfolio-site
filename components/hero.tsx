@@ -1,15 +1,19 @@
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
-import styles from 'styles/hero.module.css'
-
+import styles from '../styles/hero.module.css'
 import AnimatedText from './animatedText'
+
+type Props = {
+  title: string
+  subtitle: string
+  textCenter?: boolean
+  glitchTitle?: boolean
+}
 
 export default function Hero({
   title,
   subtitle,
   textCenter = false,
   glitchTitle = false,
-}) {
+}: Props) {
   return (
     <div className={styles.flexContainer}>
       <div className={styles.text}>

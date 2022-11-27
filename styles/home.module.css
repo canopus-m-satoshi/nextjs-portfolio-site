@@ -1,5 +1,5 @@
 .flexContainer {
-  composes: sideBySideCenter from 'styles/utils.module.css';
+  composes: sideBySideCenter from './utils.module.css';
 }
 
 .wrapper {
@@ -25,7 +25,7 @@
 
 @media (min-width: 768px) {
   .links {
-    composes: sideBySideCenter from 'styles/utils.module.css';
+    composes: sideBySideCenter from './utils.module.css';
   }
 
   .links > span {
