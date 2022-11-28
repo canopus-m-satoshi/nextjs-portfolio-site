@@ -1,14 +1,22 @@
-// サイトに関する情報
-// 汎用OGP画像
-import siteImg from 'images/ogp.jpg'
-import { siteMeta } from 'lib/constants'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+
+import siteImg from '../images/ogp.jpg'
+import { siteMeta } from '../lib/constants'
+
+type Props = {
+  pageTitle: string
+  pageDesc: string
+  pageImg?: string
+  pageImgW: string
+  pageImgH: string
+  content: string
+}
 
 const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
   siteMeta
 
-const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
+const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }: Props) => {
   // ページのタイトル
   const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle
 

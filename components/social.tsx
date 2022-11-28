@@ -1,6 +1,7 @@
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import styles from 'styles/social.module.css'
+
+import styles from '../styles/social.module.css'
 
 const Social = ({ iconSize = 'initial' }) => {
   return (

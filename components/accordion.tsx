@@ -1,7 +1,8 @@
 import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRef, useState } from 'react'
-import styles from 'styles/accordion.module.css'
+
+import styles from '../styles/accordion.module.css'
 
 const Accordion = ({ heading, children }) => {
   const [textIsOpen, setTextIsOpen] = useState(false)

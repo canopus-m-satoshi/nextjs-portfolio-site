@@ -4,8 +4,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 
-import Layout from '@/components/layout'
-import Transition from '@/components/transition'
+import Layout from '../components/layout'
+import Transition from '../components/transition'
 
 config.autoAddCss = false
 
