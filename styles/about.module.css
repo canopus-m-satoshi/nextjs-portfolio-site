@@ -17,7 +17,7 @@
 
 .list {
   display: flex;
-  gap: var(--space-sm);
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -97,6 +97,6 @@
 
 @media (min-width: 768px) {
   .skillBoxItem {
-    width: 48%;
+    width: 48.5%;
   }
 }
