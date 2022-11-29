@@ -21,7 +21,7 @@ const Accordion = ({ heading, children }) => {
           <FontAwesomeIcon icon={faCircleChevronDown} className={styles.icon} />
         </button>
       </h3>
-      <div
+      {/* <div
         className={styles.text}
         ref={refText}
         style={{
@@ -30,7 +30,7 @@ const Accordion = ({ heading, children }) => {
             : '0px',
         }}>
         <div className={styles.textInner}>{children}</div>
-      </div>
+      </div> */}
     </div>
   )
 }
