@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Accordion from '../components/accordion'
+// import Accordion from '../components/accordion'
 import Container from '../components/container'
 import Hero from '../components/hero'
 import InViewMotion from '../components/inViewMotion'
