@@ -13,8 +13,23 @@ type Props = {
   content: string
 }
 
-const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
-  siteMeta
+type SiteMeta = {
+  siteTitle: string
+  siteDesc: string
+  siteUrl: string
+  siteLocale: string
+  siteType: string
+  siteIcon: string
+}
+
+const {
+  siteTitle,
+  siteDesc,
+  siteUrl,
+  siteLocale,
+  siteType,
+  siteIcon,
+}: SiteMeta = siteMeta
 
 const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }: Props) => {
   // ページのタイトル

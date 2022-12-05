@@ -1,4 +1,5 @@
 // ローカル代替アイキャッチ画像
+import { NextPage } from 'next'
 import Image from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
 
@@ -19,7 +20,18 @@ import { eyecatchLocal } from '../../lib/constants'
 import { extractText } from '../../lib/extract-text'
 import { prevNextPost } from '../../lib/prev-next-post'
 
-const Post = ({
+type Props = {
+  title: string
+  publish: string
+  content: string
+  eyecatch: string
+  categories: string
+  description: string
+  prevPost: string
+  nextPost: string
+}
+
+const Post: NextPage<Props> = ({
   title,
   publish,
   content,
