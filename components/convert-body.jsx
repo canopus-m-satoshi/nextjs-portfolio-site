@@ -1,13 +1,9 @@
-import parse, { DOMNode } from 'html-react-parser'
+import parse from 'html-react-parser'
 import Image from 'next/image'
 
-type Props = {
-  contentHTML: string
-}
-
-export default function ConvertBody({ contentHTML }: Props) {
+export default function ConvertBody({ contentHTML }) {
   const contentReact = parse(contentHTML, {
-    replace: (node: DOMNode) => {
+    replace: (node) => {
       if (node.name === 'img') {
         const { src, alt, width, height } = node.attribs
         return (
