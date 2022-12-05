@@ -4,7 +4,7 @@ import styles from '../styles/container.module.css'
 
 type Props = {
   children: ReactNode
-  large: boolean
+  large?: boolean
 }
 
 const Container = ({ children, large = false }: Props) => {

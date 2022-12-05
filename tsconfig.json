@@ -21,7 +21,10 @@
     "**/*.tsx",
     "lib/extract-text.js",
     "components/accordion.jsx",
-    "components/convert-body.jsx"
+    "components/convert-body.jsx",
+    "components/meta.jsx",
+    "components/transition.jsx",
+    "pages/blog/[slug].jsx"
   ],
   "exclude": ["node_modules"]
 }

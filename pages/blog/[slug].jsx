@@ -3,35 +3,24 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
 
-import {
-  TwoColumn,
-  TwoColumnMain,
-  TwoColumnSidebar,
-} from '../..//components/two-column'
 import Container from '../../components/container'
 import ConvertBody from '../../components/convert-body'
-import Meta from '../../components/meta'
+import Meta from '../../components/meta.jsx'
 import Pagination from '../../components/pagination'
 import PostBody from '../../components/post-body'
 import PostCategories from '../../components/post-categories'
 import PostHeader from '../../components/post-header'
+import {
+  TwoColumn,
+  TwoColumnMain,
+  TwoColumnSidebar,
+} from '../../components/two-column'
 import { getAllSlugs, getPostBySlug } from '../../lib/api'
 import { eyecatchLocal } from '../../lib/constants'
 import { extractText } from '../../lib/extract-text'
 import { prevNextPost } from '../../lib/prev-next-post'
 
-type Props = {
-  title: string
-  publish: string
-  content: string
-  eyecatch: string
-  categories: string
-  description: string
-  prevPost: string
-  nextPost: string
-}
-
-const Post: NextPage<Props> = ({
+const Post = ({
   title,
   publish,
   content,

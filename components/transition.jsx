@@ -4,9 +4,8 @@ import { useRouter } from 'next/router'
 
 import { useTransitionFix } from '../lib/useTransitionFix'
 import styles from '../styles/transition.module.css'
-import { ChildrenProps } from '../types/children-props'
 
-const Transition = ({ children }: ChildrenProps) => {
+const Transition = ({ children }) => {
   const { asPath } = useRouter()
 
   // Measure to transition animation
