@@ -6,8 +6,10 @@ import Container from '../components/container'
 import Hero from '../components/hero'
 import InViewMotion from '../components/inViewMotion'
 import Meta from '../components/meta'
+import Skills from '../components/skills'
 import eyecatch from '../images/my_picture.jpg'
 import styles from '../styles/about.module.css'
+
 
 const About: NextPage = () => {
   const from = 2020
