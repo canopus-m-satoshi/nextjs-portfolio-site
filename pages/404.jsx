@@ -1,7 +1,9 @@
+import { NextPage } from 'next'
+
 import Container from '../components/container'
 import Hero from '../components/hero'
 import LinkButton from '../components/linkButton'
-import Meta from '../components/meta.jsx'
+import Meta from '../components/meta'
 
 const Custom404 = () => {
   return (

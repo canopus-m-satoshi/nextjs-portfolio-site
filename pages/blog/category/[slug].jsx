@@ -1,7 +1,7 @@
 import { getPlaiceholder } from 'plaiceholder'
 
 import Container from '../../../components/container'
-import Meta from '../../../components/meta.jsx'
+import Meta from '../../../components/meta'
 import PostHeader from '../../../components/post-header'
 import Posts from '../../../components/posts'
 import { getAllCategories, getAllPostsByCategory } from '../../../lib/api'

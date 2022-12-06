@@ -4,7 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/post-header.module.css'
 import ConvertDate from './convert-date'
 
-const PostHeader = ({ title, subtitle, publish = '' }) => {
+type Props = {
+  title: string
+  subtitle: string
+  publish?: string
+}
+
+const PostHeader = ({ title, subtitle, publish = '' }: Props) => {
   return (
     <div className={styles.stack}>
       <p className={styles.subtitle}>{subtitle}</p>

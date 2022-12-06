@@ -5,7 +5,7 @@ import Accordion from '../components/accordion'
 import Container from '../components/container'
 import Hero from '../components/hero'
 import InViewMotion from '../components/inViewMotion'
-import Meta from '../components/meta.jsx'
+import Meta from '../components/meta'
 import eyecatch from '../images/my_picture.jpg'
 import styles from '../styles/about.module.css'
 
