@@ -10,6 +10,13 @@ import eyecatch from '../images/my_picture.jpg'
 import styles from '../styles/about.module.css'
 
 const About: NextPage = () => {
+  const from = 2020
+  const now = new Date()
+  const currentYear = now.getFullYear()
+  const currentMonth = now.getMonth()
+
+  const pastYear = currentYear - from + 1
+
   return (
     <Container>
       <Meta
@@ -35,6 +42,18 @@ const About: NextPage = () => {
       <div className={styles.boxWrap}>
         <InViewMotion>
           <div className={styles.box}>
+            <h3 className={styles.title}>About</h3>
+            <p className={styles.description}>
+              93年生まれです。都内で活動しているエンジニアで、{currentYear}年
+              {currentMonth}
+              月でエンジニア歴{pastYear}年目になります。
+              都内のWeb制作会社で勤務後、2021年に独立しフリーランスエンジニアとなりました。LPやWordpressを用いたサイト制作を得意としています。
+            </p>
+          </div>
+        </InViewMotion>
+
+        <InViewMotion>
+          <div className={styles.box}>
             <h3 className={styles.title}>Policy</h3>
             <p className={styles.description}>
               屋号につけた「CANOPUS」とはアルゴ船座の船底の部分を表す「りゅうこつ座」の星の一つです。
@@ -51,25 +70,36 @@ const About: NextPage = () => {
 
             <div className={styles.skillBox}>
               <div className={styles.skillBoxItem}>
-                <h4 className={styles.titleSmall}>Language</h4>
+                <h4 className={styles.titleSmall}>Frontend Skills</h4>
 
                 <ul className={styles.list}>
-                  <li>HTML : 3years</li>
-                  <li>CSS(Sass) : 3years</li>
+                  <li>HTML&CSS : 3years</li>
+                  <li>Sass : 3years</li>
                   <li>JavaScript : 3years</li>
                   <li>jQuery : 3years</li>
-                  <li>PHP : 2years</li>
                   <li>React.js : 1year</li>
                   <li>Next.js : 1year</li>
                   <li>Typescript : 2months</li>
+                </ul>
+
+                <h5 className={styles.noteTitle}>Note</h5>
+                <p className={styles.note}>
+                  HTML&CSS(Sass),JavaScript,jQueryを用いたサイト制作の経験が豊富にあります。
+                  <br />
+                  それ以外の言語は独学・個人でのアプリ制作などの経験があります。
+                </p>
+              </div>
+              <div className={styles.skillBoxItem}>
+                <h4 className={styles.titleSmall}>Backend Skills</h4>
+
+                <ul className={styles.list}>
+                  <li>PHP : 2years</li>
                   <li>Express : 2months</li>
                 </ul>
 
                 <h5 className={styles.noteTitle}>Note</h5>
                 <p className={styles.note}>
-                  HTML&CSS(Sass),JavaScript,jQuery,PHPは実務経験があります。
-                  <br />
-                  それ以外は独学・個人でのアプリ制作などの経験があります。
+                  Wordpressの実務経験がありPHPも扱えます。Expressはまだまだ勉強中です。
                 </p>
               </div>
               <div className={styles.skillBoxItem}>
@@ -82,7 +112,7 @@ const About: NextPage = () => {
 
                 <h5 className={styles.noteTitle}>Note</h5>
                 <p className={styles.note}>
-                  Wordpressは実務経験があります。
+                  Wordpressを用いたサイト制作、既存サイトのリニューアルなど様々な案件を経験してきました。
                   <br />
                   それ以外は独学・個人でのアプリ制作などの経験があります。このサイトはmicroCMSを使用して作られています。
                 </p>
@@ -180,7 +210,6 @@ const About: NextPage = () => {
                   <p>
                     大学卒業後、学生ビザとワーキングホリデービザを利用し、カナダで語学留学を経験する
                   </p>
-                  <p>帰国後のTOEICテストで850点獲得する</p>
                 </li>
                 <li>
                   <p>2018 MAY - 2019 AUG</p>
