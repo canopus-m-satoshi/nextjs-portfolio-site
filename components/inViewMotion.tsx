@@ -2,6 +2,8 @@ import { motion, useAnimation } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import { useInView } from 'react-intersection-observer'
 
+import { ChildrenProps } from '../types/children-props'
+
 const variants = {
   visible: {
     opacity: 1,
@@ -11,7 +13,7 @@ const variants = {
   hidden: { opacity: 0, y: 100 },
 }
 
-export default function InViewMotion({ children }) {
+export default function InViewMotion({ children }: ChildrenProps) {
   const controls = useAnimation()
   const scrollRef = useRef(null)
   const [ref, inView] = useInView()

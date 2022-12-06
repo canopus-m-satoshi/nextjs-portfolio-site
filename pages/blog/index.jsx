@@ -2,7 +2,7 @@ import { getPlaiceholder } from 'plaiceholder'
 
 import Container from '../../components/container'
 import Hero from '../../components/hero'
-import Meta from '../../components/meta'
+import Meta from '../../components/meta.jsx'
 import Posts from '../../components/posts'
 import { getAllPosts } from '../../lib/api'
 // ローカル代替アイキャッチ画像

@@ -1,37 +1,52 @@
 import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useRef, useState } from 'react'
+import { motion, useAnimationControls } from 'framer-motion'
+import { ReactNode, useState } from 'react'
 
 import styles from '../styles/accordion.module.css'
 
-const Accordion = ({ heading, children }) => {
-  const [textIsOpen, setTextIsOpen] = useState(false)
+type Props = {
+  heading: string
+  children: ReactNode
+}
 
-  const toggleText = () => {
-    setTextIsOpen((prev) => !prev)
+const Accordion = ({ heading, children }: Props) => {
+  const [isExpanded, setIsExpanded] = useState(true)
+
+  const toggleExpanded = () => {
+    if (isExpanded) {
+      controls.start({
+        height: '0',
+      })
+    } else {
+      controls.start({
+        height: '100%',
+      })
+    }
+
+    setIsExpanded(!isExpanded)
   }
 
-  const refText = useRef(null)
+  const controls = useAnimationControls()
 
   return (
-    <div className={textIsOpen ? styles.open : styles.close}>
-      <h3 className={styles.heading}>
-        <button onClick={toggleText}>
+    <div className={styles.container}>
+      <div className={styles.heading}>
+        <button
+          onClick={toggleExpanded}
+          className={isExpanded ? styles.open : styles.close}>
           {heading}
           <FontAwesomeIcon icon={faCircleChevronDown} className={styles.icon} />
         </button>
-      </h3>
-      <div
-        className={styles.text}
-        ref={refText}
-        style={{
-          '--text-height': refText.current
-            ? `${refText.current.scrollHeight}px`
-            : '0px',
-        }}>
-        <div className={styles.textInner}>{children}</div>
       </div>
+      <motion.div
+        className={styles.accordion}
+        animate={controls}
+        transition={{ duration: 0.5 }}>
+        <div className={styles.textInner}>{children}</div>
+      </motion.div>
     </div>
   )
 }
+
 export default Accordion

@@ -1,3 +1,4 @@
+import { NextPage } from 'next'
 import Image from 'next/image'
 
 import Accordion from '../components/accordion'
@@ -9,14 +10,15 @@ import Skills from '../components/skills'
 import eyecatch from '../images/my_picture.jpg'
 import styles from '../styles/about.module.css'
 
-const from = 2020
-const now = new Date()
-const currentYear = now.getFullYear()
-const currentMonth = now.getMonth()
 
-const pastYear = currentYear - from + 1
+const About: NextPage = () => {
+  const from = 2020
+  const now = new Date()
+  const currentYear = now.getFullYear()
+  const currentMonth = now.getMonth()
 
-export default function About() {
+  const pastYear = currentYear - from + 1
+
   return (
     <Container>
       <Meta
@@ -159,57 +161,97 @@ export default function About() {
           <div className={styles.box}>
             <h3 className={styles.title}>History</h3>
 
-            {/* <Accordion heading="エンジニア転向前"> */}
-            <h3 className={styles.heading}>エンジニア転向前</h3>
-            <br />
-            <ul className={styles.list}>
-              <li>
-                <p>2016 OCT - 2018 FEB</p>
-                <p>
-                  大学卒業後、学生ビザとワーキングホリデービザを利用し、カナダで語学留学を経験する
-                </p>
-                <p>帰国後のTOEICテストで850点獲得する</p>
-              </li>
-              <li>
-                <p>2018 MAY - 2019 AUG</p>
-                <p>都内専門商社で営業職として勤務</p>
-                <p>HPの有無が商談に影響することに気づき、Web制作に興味を持つ</p>
-              </li>
-            </ul>
-            {/* </Accordion> */}
-            <br />
-            <hr />
-            <br />
-            {/* <Accordion heading="エンジニア転向後"> */}
-            <h3 className={styles.heading}>エンジニア転向後</h3>
-            <br />
-            <ul className={styles.list}>
-              <li>
-                <p>2020 JAN - 2021 AUG</p>
-                <p>
-                  都内WEB制作会社で正社員としてマークアップエンジニアとして勤務
-                  LP、コーポレートサイト制作、運用・保守など静的/動的ページ問わず様々な案件を経験する
-                  WEB制作の基礎〜Wordpressのスキルをつける
-                </p>
-              </li>
-              <li>
-                <p>2021 AUG - NOW</p>
-                <p>
-                  フリーランスとして活動
-                  都内脱毛サロンのリニューアル、新規LPの作成、保守運用等をメインに知人のHP制作等を請け負う
-                </p>
-              </li>
-              <li>
-                <p>2022 AUG</p>
-                <p>
-                  独学で習得したReact、Next.jsといったモダンフロントエンドスキルを用いてポートフォリオサイトを作成する
-                </p>
-              </li>
-            </ul>
-            {/* </Accordion> */}
+            {/* <Accordion heading="エンジニア転向前">
+              <ul className={styles.list}>
+                <li>
+                  <p>2016 OCT - 2018 FEB</p>
+                  <p>
+                    大学卒業後、学生ビザとワーキングホリデービザを利用し、カナダで語学留学を経験する
+                  </p>
+                  <p>帰国後のTOEICテストで850点獲得する</p>
+                </li>
+                <li>
+                  <p>2018 MAY - 2019 AUG</p>
+                  <p>都内専門商社で営業職として勤務</p>
+                  <p>
+                    HPの有無が商談に影響することに気づき、Web制作に興味を持つ
+                  </p>
+                </li>
+              </ul>
+            </Accordion>
+
+            <Accordion heading="エンジニア転向後">
+              <ul className={styles.list}>
+                <li>
+                  <p>2020 JAN - 2021 AUG</p>
+                  <p>
+                    都内WEB制作会社で正社員としてマークアップエンジニアとして勤務
+                    LP、コーポレートサイト制作、運用・保守など静的/動的ページ問わず様々な案件を経験する
+                    WEB制作の基礎〜Wordpressのスキルをつける
+                  </p>
+                </li>
+                <li>
+                  <p>2021 AUG - NOW</p>
+                  <p>
+                    フリーランスとして活動
+                    都内脱毛サロンのリニューアル、新規LPの作成、保守運用等をメインに知人のHP制作等を請け負う
+                  </p>
+                </li>
+                <li>
+                  <p>2022 AUG</p>
+                  <p>
+                    独学で習得したReact、Next.jsといったモダンフロントエンドスキルを用いてポートフォリオサイトを作成する
+                  </p>
+                </li>
+              </ul>
+            </Accordion> */}
+            <Accordion heading={'エンジニア転向前'}>
+              <ul className={styles.list}>
+                <li>
+                  <p>2016 OCT - 2018 FEB</p>
+                  <p>
+                    大学卒業後、学生ビザとワーキングホリデービザを利用し、カナダで語学留学を経験する
+                  </p>
+                </li>
+                <li>
+                  <p>2018 MAY - 2019 AUG</p>
+                  <p>都内専門商社で営業職として勤務</p>
+                  <p>
+                    HPの有無が商談に影響することに気づき、Web制作に興味を持つ
+                  </p>
+                </li>
+              </ul>
+            </Accordion>
+            <Accordion heading="エンジニア転向後">
+              <ul className={styles.list}>
+                <li>
+                  <p>2020 JAN - 2021 AUG</p>
+                  <p>
+                    都内WEB制作会社で正社員としてマークアップエンジニアとして勤務
+                    LP、コーポレートサイト制作、運用・保守など静的/動的ページ問わず様々な案件を経験する
+                    WEB制作の基礎〜Wordpressのスキルをつける
+                  </p>
+                </li>
+                <li>
+                  <p>2021 AUG - NOW</p>
+                  <p>
+                    フリーランスとして活動
+                    都内脱毛サロンのリニューアル、新規LPの作成、保守運用等をメインに知人のHP制作等を請け負う
+                  </p>
+                </li>
+                <li>
+                  <p>2022 AUG</p>
+                  <p>
+                    独学で習得したReact、Next.jsといったモダンフロントエンドスキルを用いてポートフォリオサイトを作成する
+                  </p>
+                </li>
+              </ul>
+            </Accordion>
           </div>
         </InViewMotion>
       </div>
     </Container>
   )
 }
+
+export default About

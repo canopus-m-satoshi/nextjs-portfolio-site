@@ -1,14 +1,10 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -22,9 +18,18 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "lib/extract-text.js",
+    "components/accordion.jsx",
+    "components/convert-body.jsx",
+    "components/meta.jsx",
+    "components/transition.jsx",
+    "pages/blog/[slug].jsx",
+    "pages/contact.jsx",
+    "pages/blog/index.jsx",
+    "pages/blog/category/[slug].jsx",
+    "pages/404.jsx",
+    "components/social.jsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

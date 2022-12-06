@@ -3,7 +3,22 @@ import Link from 'next/link'
 
 import styles from '../styles/posts.module.css'
 
-const Posts = ({ posts }) => {
+type Array = {
+  title: string
+  slug: string
+  eyecatch: Object
+}
+
+type Object = {
+  url: string
+  blurDataURL: string
+}
+
+type Props = {
+  posts: Array[]
+}
+
+const Posts = ({ posts }: Props) => {
   return (
     <div className={styles.gridContainer}>
       {posts.map(({ title, slug, eyecatch }) => (
