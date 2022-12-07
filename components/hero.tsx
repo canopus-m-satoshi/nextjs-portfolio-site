@@ -1,5 +1,5 @@
 import styles from '../styles/hero.module.css'
-import AnimatedText from './animatedText'
+import AnimatedText from './AnimatedText'
 
 type Props = {
   title: string
@@ -8,12 +8,12 @@ type Props = {
   glitchTitle?: boolean
 }
 
-export default function Hero({
+const Hero = ({
   title,
   subtitle,
   textCenter = false,
   glitchTitle = false,
-}: Props) {
+}: Props) => {
   return (
     <div className={styles.flexContainer}>
       <div className={styles.text}>
@@ -29,3 +29,5 @@ export default function Hero({
     </div>
   )
 }
+
+export default Hero

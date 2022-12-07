@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion'
 
-const AnimatedText = ({ animatedText }) => {
+type Props = {
+  animatedText: string
+}
+
+const AnimatedText = ({ animatedText }: Props) => {
   const line = animatedText
 
   const sentence = {

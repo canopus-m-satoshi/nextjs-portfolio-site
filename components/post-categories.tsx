@@ -4,7 +4,16 @@ import Link from 'next/link'
 
 import styles from '../styles/post-categories.module.css'
 
-const PostCategories = ({ categories }) => {
+type Array = {
+  name: string
+  slug: string
+}
+
+type Props = {
+  categories: Array[]
+}
+
+const PostCategories = ({ categories }: Props) => {
   return (
     <div className={styles.flexContainer}>
       <h3 className={styles.heading}>

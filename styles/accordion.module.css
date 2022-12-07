@@ -32,39 +32,12 @@
   transform: rotate(180deg);
 }
 
-/* テキスト */
-.text {
-  overflow: hidden;
-  height: 0px;
-  transition: none;
+.container {
+  border: solid 1px var(--gray-25);
 }
 
-.open .text {
-  animation: openAnim 0.5s forwards;
-}
-.close .text {
-  animation: closeAnim 0.5s forwards;
-}
-
-@keyframes openAnim {
-  0% {
-    height: 0px;
-  }
-  99% {
-    height: var(--text-height);
-  }
-  100% {
-    height: auto;
-  }
-}
-
-@keyframes closeAnim {
-  0% {
-    height: var(--text-height);
-  }
-  100% {
-    height: 0px;
-  }
+.container:not(:first-child) {
+  margin-top: var(--space-xs);
 }
 
 .textInner {
@@ -74,4 +47,14 @@
 
 .textInner ul {
   flex-direction: column;
+}
+
+.accordion {
+  width: auto;
+  overflow: hidden;
+}
+
+.main-contents {
+  width: 100%;
+  height: 100%;
 }
