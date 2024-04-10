@@ -4,6 +4,7 @@ import Link from 'next/link'
 import useSWR from 'swr'
 
 import styles from '../styles/blog-list.module.css'
+import ConvertDate from './ConvertDate'
 
 interface Post {
   id: number
@@ -31,7 +32,9 @@ export default function BlogList() {
             <Link href={`https://zenn.dev/${post.path}`} target="blank">
               <span>{post.emoji}</span>
               <p className={styles.title}>{post.title}</p>
-              <p>{/* <ConvertDate convertDate={post.published_at} /> */}</p>
+              <p>
+                <ConvertDate dateISO={post.published_at} />
+              </p>
             </Link>
           </li>
         ))}
