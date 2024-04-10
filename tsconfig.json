@@ -33,7 +33,7 @@
     "src/app/contact.jsx",
     "src/app/blog/index.jsx",
     "src/app/blog/category/[slug].jsx",
-    "src/app/404.jsx",
+    "src/app/not-found.tsx",
     "src/components/social.jsx",
     ".next/types/**/*.ts"
   ],

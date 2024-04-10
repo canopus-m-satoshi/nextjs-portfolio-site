@@ -1,14 +1,9 @@
-import { NextPage } from 'next'
-
-import Container from '../components/container'
 import Hero from '../components/hero'
 import LinkButton from '../components/linkButton'
-import Meta from '../components/meta'
 
-const Custom404 = () => {
+export default function NotFound() {
   return (
-    <Container>
-      <Meta pageTitle="404 - Page not found" />
+    <>
       <Hero title="404" subtitle="ページが見つかりません" />
 
       <p className="error-txt">
@@ -25,7 +20,6 @@ const Custom404 = () => {
         }}>
         <LinkButton href="/" text="To Home Page" />
       </div>
-    </Container>
+    </>
   )
 }
-export default Custom404
