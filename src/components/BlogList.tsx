@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import useSWR from 'swr'
 
-import styles from '../styles/blog-list.module.scss'
+import styles from '../styles/blog-list.module.css'
 
 interface Post {
   id: number
