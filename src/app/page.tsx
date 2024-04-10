@@ -1,3 +1,5 @@
+'use client'
+
 import Container from '../components/container'
 import Hero from '../components/hero'
 import LinkButton from '../components/linkButton'
@@ -7,7 +9,7 @@ import styles from '../styles/home.module.css'
 export default function Home() {
   return (
     <Container>
-      <Meta />
+      {/* <Meta /> */}
       <div className={styles.wrapper}>
         <Hero
           title="CANOPUS"

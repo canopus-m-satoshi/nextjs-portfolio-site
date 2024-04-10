@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -13,23 +17,31 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "lib/extract-text.js",
-    "components/accordion.jsx",
-    "components/convert-body.jsx",
-    "components/meta.jsx",
-    "components/transition.jsx",
-    "pages/blog/[slug].jsx",
-    "pages/contact.jsx",
-    "pages/blog/index.jsx",
-    "pages/blog/category/[slug].jsx",
-    "pages/404.jsx",
-    "components/social.jsx"
+    "src/lib/extract-text.js",
+    "src/components/accordion.jsx",
+    "src/components/convert-body.jsx",
+    "src/components/meta.jsx",
+    "src/components/transition.jsx",
+    "src/app/blog/[slug].jsx",
+    "src/app/contact.jsx",
+    "src/app/blog/index.jsx",
+    "src/app/blog/category/[slug].jsx",
+    "src/app/404.jsx",
+    "src/components/social.jsx",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
