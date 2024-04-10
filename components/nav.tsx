@@ -33,29 +33,21 @@ const Nav = () => {
       </button>
       <ul className={styles.list}>
         <li>
-          <Link href="/">
-            <a onClick={closeNav}>Home</a>
+          <Link href="/" onClick={closeNav}>
+            Home
           </Link>
         </li>
         <li>
-          <Link href="/about">
-            <a onClick={closeNav}>About</a>
-          </Link>
+          <Link href="/about">About</Link>
         </li>
         <li>
-          <Link href="/blog">
-            <a onClick={closeNav}>Blog</a>
-          </Link>
+          <Link href="/blog">Blog</Link>
         </li>
         <li>
-          <Link href="/work">
-            <a onClick={closeNav}>Work</a>
-          </Link>
+          <Link href="/work">Work</Link>
         </li>
         <li>
-          <Link href="/contact">
-            <a onClick={closeNav}>Contact</a>
-          </Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </nav>

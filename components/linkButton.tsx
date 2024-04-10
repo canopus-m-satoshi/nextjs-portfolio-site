@@ -13,10 +13,8 @@ export default function LinkButton({ href, text }: Props) {
   return (
     <span className={styles.link}>
       <Link href={href}>
-        <a>
-          <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
-          <span>{text}</span>
-        </a>
+        <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
+        <span>{text}</span>
       </Link>
     </span>
   )
