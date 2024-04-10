@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -29,7 +29,7 @@
     "sharp": "^0.30.7"
   },
   "devDependencies": {
-    "@types/react": "^18.0.25",
+    "@types/react": "^18.2.75",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3",
     "eslint-plugin-simple-import-sort": "^8.0.0",
