@@ -1,6 +1,5 @@
 'use client'
 
-import Container from '../components/container'
 import Hero from '../components/hero'
 import LinkButton from '../components/linkButton'
 import Meta from '../components/meta'
@@ -8,7 +7,7 @@ import styles from '../styles/home.module.css'
 
 export default function Home() {
   return (
-    <Container>
+    <>
       {/* <Meta /> */}
       <div className={styles.wrapper}>
         <Hero
@@ -42,6 +41,6 @@ export default function Home() {
           <LinkButton href="/contact" text="Contact" />
         </div>
       </div>
-    </Container>
+    </>
   )
 }

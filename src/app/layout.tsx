@@ -2,6 +2,7 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 
+import Container from '../components/container'
 import Footer from '../components/footer'
 import Header from '../components/header'
 
@@ -20,7 +21,9 @@ export default function RootLayout({
       <body>
         <div className="flex flex-col min-h-screen">
           <Header />
-          <div className="flex-grow">{children}</div>
+          <main>
+            <Container>{children}</Container>
+          </main>
           <Footer />
         </div>
       </body>

@@ -1,12 +1,12 @@
 import { getPlaiceholder } from 'plaiceholder'
 
-import Container from '../../components/container'
-import Hero from '../../components/hero'
+import Container from '../../components/container.js'
+import Hero from '../../components/hero.js'
 import Meta from '../../components/meta.jsx'
-import Posts from '../../components/posts'
-import { getAllPosts } from '../../lib/api'
+import Posts from '../../components/posts.js'
+import { getAllPosts } from '../../lib/api.js'
 // ローカル代替アイキャッチ画像
-import { eyecatchLocal } from '../../lib/constants'
+import { eyecatchLocal } from '../../lib/constants.js'
 
 export default function Blog({ posts }) {
   return (

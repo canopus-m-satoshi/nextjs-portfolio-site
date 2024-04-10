@@ -1,6 +1,5 @@
 'use client'
 
-import Container from '../../components/container'
 import Hero from '../../components/hero'
 import LinkButton from '../../components/linkButton'
 import Meta from '../../components/meta'
@@ -11,7 +10,7 @@ export default function Home() {
     'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
 
   return (
-    <Container>
+    <>
       {/* <Meta pageTitle="Work" pageDesc="制作実績紹介ページ" /> */}
       <Hero title="Work" subtitle="制作実績紹介" />
 
@@ -45,6 +44,6 @@ export default function Home() {
         }}>
         <LinkButton href={formLink} text="コンタクトフォームへ" />
       </div>
-    </Container>
+    </>
   )
 }

@@ -3,7 +3,6 @@
 import Image from 'next/image'
 
 import Accordion from '../../components/accordion'
-import Container from '../../components/container'
 import Hero from '../../components/hero'
 import InViewMotion from '../../components/inViewMotion'
 import Meta from '../../components/meta'
@@ -18,7 +17,7 @@ export default function Home() {
   const pastYear = currentYear - from + 1
 
   return (
-    <Container>
+    <>
       {/* <Meta
         pageTitle="Abouts"
         pageDesc="About Canopus"
@@ -204,6 +203,6 @@ export default function Home() {
           </div>
         </InViewMotion>
       </div>
-    </Container>
+    </>
   )
 }
