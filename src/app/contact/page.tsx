@@ -1,15 +1,14 @@
-import Container from '../components/container'
-import Hero from '../components/hero'
-import LinkButton from '../components/linkButton'
-import Meta from '../components/meta'
+import Hero from '../../components/hero'
+import LinkButton from '../../components/linkButton'
+import Meta from '../../components/meta'
 
-export default function Contact() {
+export default function Home() {
   const formLink =
     'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
 
   return (
-    <Container>
-      <Meta pageTitle="Contact" pageDesc="お問合せページです" />
+    <>
+      {/* <Meta pageTitle="Contact" pageDesc="お問合せページです" /> */}
       <Hero title="Contact" subtitle="お問合せはこちらから" />
 
       <p>
@@ -26,6 +25,6 @@ export default function Contact() {
         }}>
         <LinkButton href={formLink} text="Google Formへ" />
       </div>
-    </Container>
+    </>
   )
 }
