@@ -34,7 +34,7 @@
     "src/app/blog/index.jsx",
     "src/app/blog/category/[slug].jsx",
     "src/app/not-found.tsx",
-    "src/components/Social.jsx",
+    "src/components/Social.tsx",
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

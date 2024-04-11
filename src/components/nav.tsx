@@ -31,7 +31,6 @@ const Nav = () => {
       )}
       <button className={styles.btn} onClick={toggleNav}>
         <span className={styles.bar}></span>
-        <span className="sr-only">Menu</span>
       </button>
       <ul className={styles.list}>
         <li>
