@@ -1,7 +1,6 @@
-import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion, useAnimationControls } from 'framer-motion'
 import { ReactNode, useState } from 'react'
+import { FaCircleChevronDown } from 'react-icons/fa6'
 
 import styles from '../styles/accordion.module.css'
 
@@ -36,7 +35,7 @@ const Accordion = ({ heading, children }: Props) => {
           onClick={toggleExpanded}
           className={isExpanded ? styles.open : styles.close}>
           {heading}
-          <FontAwesomeIcon icon={faCircleChevronDown} className={styles.icon} />
+          <FaCircleChevronDown className={styles.icon} />
         </button>
       </div>
       <motion.div

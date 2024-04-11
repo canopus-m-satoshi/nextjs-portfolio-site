@@ -1,5 +1,3 @@
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SiZenn } from 'react-icons/si'
 import { FaGithub } from 'react-icons/fa'
 import styles from '../styles/social.module.css'

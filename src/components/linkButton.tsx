@@ -1,6 +1,5 @@
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import { FaChevronRight } from 'react-icons/fa'
 
 import styles from '../styles/linkButton.module.css'
 
@@ -13,7 +12,7 @@ export default function LinkButton({ href, text }: Props) {
   return (
     <span className={styles.link}>
       <Link href={href}>
-        <FontAwesomeIcon icon={faChevronRight} color={'#fff'} />
+        <FaChevronRight color={'#fff'} />
         <span>{text}</span>
       </Link>
     </span>
