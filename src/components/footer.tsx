@@ -8,7 +8,7 @@ const Footer = () => {
       <Container>
         <div className={styles.flexContainer}>
           <Social />
-          <p>&copy; 2022 CANOPUS</p>
+          <p>&copy; 2024 CANOPUS</p>
         </div>
       </Container>
     </footer>
