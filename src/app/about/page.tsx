@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Accordion from '../../components/Accordion'
 import Hero from '../../components/Hero'
 import InViewMotion from '../../components/InViewMotion'
-import Meta from '../../components/meta'
 import eyecatch from '../../images/my_picture.jpg'
 import styles from '../../styles/about.module.css'
 
