@@ -1,0 +1,120 @@
+.eyecatch {
+  text-align: center;
+}
+
+.eyecatch img {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 15px 15px 0 var(--sub);
+  width: 90%;
+  height: auto;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .eyecatch img {
+    width: 600px;
+    height: auto;
+  }
+}
+
+.boxWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  row-gap: var(--space-md);
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.list > li {
+  padding-left: 1.8em;
+  position: relative;
+  flex: 1 0 46%;
+}
+
+.list > li::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.title {
+  font-size: var(--heading1);
+  margin: 0 0 var(--space-xs);
+  color: var(--sub);
+}
+
+.title::first-letter {
+  color: var(--accent);
+  font-size: 2em;
+  opacity: 0.65;
+  text-shadow: 2px 2px 1px #eee;
+}
+
+.titleSmall {
+  font-size: var(--heading2);
+  color: var(--sub);
+  margin: 0 0 var(--space-xs);
+}
+
+.noteTitle {
+  font-size: var(--heading3);
+  margin: var(--space-md) 0 0 0;
+  padding-left: var(--space-xs);
+  position: relative;
+  color: var(--sub);
+}
+
+.noteTitle::before {
+  content: '';
+  width: 15px;
+  height: 3px;
+  background: var(--sub);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.note {
+  margin: calc(var(--display) * 0.07) 0 0;
+}
+
+.skillBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.skillBoxItem {
+  width: auto;
+  border: 1px solid;
+  padding: var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .skillBoxItem {
+    width: 48.5%;
+  }
+}
+
+.textContainer p {
+  line-height: 1.6;
+}
+
+.textContainer p + p {
+  margin-top: 0.8em;
+}

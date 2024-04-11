@@ -13,23 +13,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "lib/extract-text.js",
-    "components/accordion.jsx",
-    "components/convert-body.jsx",
-    "components/meta.jsx",
-    "components/transition.jsx",
-    "pages/blog/[slug].jsx",
-    "pages/contact.jsx",
-    "pages/blog/index.jsx",
-    "pages/blog/category/[slug].jsx",
-    "pages/404.jsx",
-    "components/social.jsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
