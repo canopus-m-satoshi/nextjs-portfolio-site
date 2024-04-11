@@ -28,13 +28,13 @@
     "src/components/accordion.jsx",
     "src/components/convert-body.jsx",
     "src/components/meta.jsx",
-    "src/components/transition.jsx",
+    "src/components/Transition.jsx",
     "src/app/blog/[slug].jsx",
     "src/app/contact.jsx",
     "src/app/blog/index.jsx",
     "src/app/blog/category/[slug].jsx",
     "src/app/not-found.tsx",
-    "src/components/social.jsx",
+    "src/components/Social.jsx",
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

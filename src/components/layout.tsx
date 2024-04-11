@@ -1,7 +1,7 @@
 import styles from '../styles/layout.module.css'
 import { ChildrenProps } from '../types/children-props'
-import Footer from './footer'
-import Header from './header'
+import Footer from './Footer'
+import Header from './Header'
 
 const Layout = ({ children }: ChildrenProps) => {
   return (

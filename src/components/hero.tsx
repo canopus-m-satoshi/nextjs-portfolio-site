@@ -1,5 +1,5 @@
 import styles from '../styles/hero.module.css'
-import AnimatedText from './animatedText'
+import AnimatedText from './AnimatedText'
 
 type Props = {
   title: string
