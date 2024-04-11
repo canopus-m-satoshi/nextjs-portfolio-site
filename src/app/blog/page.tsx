@@ -3,7 +3,7 @@
 import useSWR from 'swr'
 
 import BlogList from '../../components/BlogList'
-import Hero from '../../components/Hero'
+import Hero from '../../components/hero'
 
 interface Post {
   id: number

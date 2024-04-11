@@ -1,6 +1,6 @@
 'use client'
 
-import Hero from '../../components/Hero'
+import Hero from '../../components/hero'
 import LinkButton from '../../components/LinkButton'
 import Meta from '../../components/meta'
 
