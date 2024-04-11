@@ -19,11 +19,12 @@
   --small-heading3: calc(var(--small-heading2) * 0.86); /* 12-23px */
 
   /* スペース（余白・間隔） */
-  --space-xs: clamp(1.25rem, 1rem + 0.98vw, 1.875rem); /* 20-30px */
-  --space-sm: calc(var(--space-xs) * 1.5); /* 30-45px */
-  --space-md: calc(var(--space-xs) * 2); /* 40-60px */
-  --space-lg: calc(var(--space-xs) * 3); /* 60-90px */
-  --space-xl: calc(var(--space-xs) * 4); /* 80-120px */
+  /* スペース（余白・間隔） */
+  --space-xs: clamp(1rem, 0.75rem + 0.75vw, 1.5rem); /* 16-24px */
+  --space-sm: calc(var(--space-xs) * 1.5); /* 24-36px */
+  --space-md: calc(var(--space-xs) * 2); /* 32-48px */
+  --space-lg: calc(var(--space-xs) * 3); /* 48-72px */
+  --space-xl: calc(var(--space-xs) * 4); /* 64-96px */
   --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem); /* 20-60px */
 }
 
