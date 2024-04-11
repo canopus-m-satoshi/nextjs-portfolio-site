@@ -5,6 +5,16 @@
 .eyecatch img {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   box-shadow: 15px 15px 0 var(--sub);
+  width: 90%;
+  height: auto;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .eyecatch img {
+    width: 600px;
+    height: auto;
+  }
 }
 
 .boxWrap {

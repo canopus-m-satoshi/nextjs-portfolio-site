@@ -1,7 +1,3 @@
-.flexContainer {
-  composes: sideBySideCenter from './utils.module.css';
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -24,10 +20,6 @@
 }
 
 @media (min-width: 768px) {
-  .links {
-    composes: sideBySideCenter from './utils.module.css';
-  }
-
   .links > span {
     flex: auto;
   }

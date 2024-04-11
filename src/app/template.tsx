@@ -19,7 +19,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             opacity: 1,
             y: 0,
             x: 0,
-            transition: { duration: 0.75, delay: 0.5 },
+            transition: { duration: 0.9, delay: 0.1 },
           },
         }
       case '/about':
@@ -29,7 +29,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             opacity: 1,
             y: 0,
             x: 0,
-            transition: { duration: 0.75, delay: 0.5 },
+            transition: { duration: 0.9, delay: 0.1 },
           },
         }
       case '/blog':
@@ -39,7 +39,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             opacity: 1,
             y: 0,
             x: 0,
-            transition: { duration: 0.75, delay: 0.5 },
+            transition: { duration: 0.9, delay: 0.1 },
           },
         }
       case '/work':
@@ -49,7 +49,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             opacity: 1,
             y: 0,
             x: 0,
-            transition: { duration: 0.75, delay: 0.5 },
+            transition: { duration: 0.9, delay: 0.1 },
           },
         }
       case '/contact':
@@ -58,13 +58,13 @@ export default function Template({ children }: { children: React.ReactNode }) {
           in: {
             opacity: 1,
             scale: 1,
-            transition: { duration: 0.75, delay: 0.5 },
+            transition: { duration: 0.9, delay: 0.1 },
           },
         }
       default:
         return {
           out: { opacity: 0, transition: { duration: 0.75 } },
-          in: { opacity: 1, transition: { duration: 0.75, delay: 0.5 } },
+          in: { opacity: 1, transition: { duration: 0.9, delay: 0.1 } },
         }
     }
   }

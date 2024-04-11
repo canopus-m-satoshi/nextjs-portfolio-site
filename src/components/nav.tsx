@@ -39,16 +39,24 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about" onClick={closeNav}>
+            About
+          </Link>
         </li>
         <li>
-          <Link href="/blog">Blog</Link>
+          <Link href="/blog" onClick={closeNav}>
+            Blog
+          </Link>
         </li>
         <li>
-          <Link href="/work">Work</Link>
+          <Link href="/work" onClick={closeNav}>
+            Work
+          </Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact" onClick={closeNav}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
