@@ -2,9 +2,9 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 
-import Container from '../components/Container'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Container from '../components/container'
+import Footer from '../components/footer'
+import Header from '../components/header'
 
 export const metadata: Metadata = {
   title: 'Canopus Portfolio Site',

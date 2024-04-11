@@ -1,5 +1,5 @@
 import styles from '../styles/header.module.css'
-import Container from './Container'
+import Container from './container'
 import Logo from './Logo'
 import Nav from './Nav'
 

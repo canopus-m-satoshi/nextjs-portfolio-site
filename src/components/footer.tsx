@@ -1,5 +1,5 @@
 import styles from '../styles/footer.module.css'
-import Container from './Container'
+import Container from './container'
 import Social from './Social'
 
 const Footer = () => {
