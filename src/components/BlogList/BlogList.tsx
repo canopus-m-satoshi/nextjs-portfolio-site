@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import styles from '../styles/blog-list.module.css'
-import ConvertDate from './ConvertDate'
+import ConvertDate from '../ConvertDate/ConvertDate'
+import styles from './BlogList.module.css'
 
 interface Props {
   posts: {

@@ -2,7 +2,7 @@ import { motion, useAnimation } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-import { ChildrenProps } from '../types/children-props'
+import { ChildrenProps } from '../../types/children-props'
 
 const variants = {
   visible: {

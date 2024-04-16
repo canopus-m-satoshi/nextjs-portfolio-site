@@ -1,7 +1,7 @@
-import styles from '../styles/header.module.css'
-import Container from './container'
-import Logo from './logo'
-import Nav from './nav'
+import Container from '../Container/Container'
+import Logo from '../Logo/Logo'
+import Nav from '../Nav/Nav'
+import styles from './header.module.css'
 
 const Header = () => {
   return (

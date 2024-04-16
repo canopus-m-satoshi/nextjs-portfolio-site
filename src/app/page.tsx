@@ -1,9 +1,8 @@
 'use client'
 
-import Hero from '../components/hero'
-import LinkButton from '../components/linkButton'
-import Meta from '../components/meta'
-import styles from '../styles/home.module.css'
+import Hero from '../components/Hero/Hero'
+import LinkButton from '../components/LinkButton/LinkButton'
+import styles from './home.module.css'
 
 export default function Home() {
   return (

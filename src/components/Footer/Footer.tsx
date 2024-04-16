@@ -1,6 +1,6 @@
-import styles from '../styles/footer.module.css'
-import Container from './container'
-import Social from './Social'
+import Container from '../Container/Container'
+import Social from '../Social/Social'
+import styles from './Footer.module.css'
 
 const Footer = () => {
   return (

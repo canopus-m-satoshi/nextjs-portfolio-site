@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FaChevronRight } from 'react-icons/fa'
 
-import styles from '../styles/linkButton.module.css'
+import styles from './linkButton.module.css'
 
 type Props = {
   href: string
