@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SiZenn } from 'react-icons/si'
 
-import styles from '../styles/social.module.css'
+import styles from './Social.module.css'
 
 const Social = () => {
   return (

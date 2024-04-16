@@ -2,7 +2,7 @@ import { motion, useAnimationControls } from 'framer-motion'
 import { ReactNode, useState } from 'react'
 import { FaCircleChevronDown } from 'react-icons/fa6'
 
-import styles from '../styles/accordion.module.css'
+import styles from './Accordion.module.css'
 
 type Props = {
   heading: string

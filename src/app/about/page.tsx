@@ -2,11 +2,11 @@
 
 import Image from 'next/image'
 
-import Accordion from '../../components/accordion'
-import Hero from '../../components/hero'
-import InViewMotion from '../../components/inViewMotion'
+import Accordion from '../../components/Accordion/Accordion'
+import Hero from '../../components/Hero/Hero'
+import InViewMotion from '../../components/InViewMotion/InViewMotion'
 import eyecatch from '../../images/my_picture.jpg'
-import styles from '../../styles/about.module.css'
+import styles from './About.module.css'
 
 export default function Home() {
   const from = 2020

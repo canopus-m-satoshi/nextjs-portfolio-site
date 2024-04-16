@@ -1,5 +1,5 @@
-import Hero from '../../components/hero'
-import LinkButton from '../../components/linkButton'
+import Hero from '../../components/Hero/Hero'
+import LinkButton from '../../components/LinkButton/LinkButton'
 import Meta from '../../components/meta'
 
 export default function Home() {
