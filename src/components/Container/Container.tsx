@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import styles from './container.module.css'
+import styles from './Container.module.css'
 
 type Props = {
   children: ReactNode

@@ -2,7 +2,7 @@
 
 import Hero from '../components/Hero/Hero'
 import LinkButton from '../components/LinkButton/LinkButton'
-import styles from './home.module.css'
+import styles from './Home.module.css'
 
 export default function Home() {
   return (

@@ -3,7 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { useRouter } from 'next/router'
 
 import { useTransitionFix } from '../../lib/useTransitionFix'
-import styles from './transition.module.css'
+import styles from './Transition.module.css'
 
 const Transition = ({ children }: { children: React.ReactNode }) => {
   const { asPath } = useRouter()
