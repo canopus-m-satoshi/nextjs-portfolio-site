@@ -1,6 +1,13 @@
+import { Metadata } from 'next'
+
 import Hero from '../../components/Hero/Hero'
 import LinkButton from '../../components/LinkButton/LinkButton'
-import Meta from '../../components/meta'
+
+export const metadata: Metadata = {
+  title: 'Contact Page - Canopus Portfolio Site',
+  description:
+    'CANOPUSへの仕事依頼やポートフォリオ閲覧希望は、外部サイトのGoogle Formよりお問い合わせください。Webサイト制作、Webアプリ開発、技術コンサルティングなど、幅広いご要望にお応えします。丁寧なヒアリングと迅速な対応で、お客様の課題解決を支援いたします。',
+}
 
 export default function Home() {
   const formLink =
@@ -8,7 +15,6 @@ export default function Home() {
 
   return (
     <>
-      {/* <Meta pageTitle="Contact" pageDesc="お問合せページです" /> */}
       <Hero title="Contact" subtitle="お問合せはこちらから" />
 
       <p>
