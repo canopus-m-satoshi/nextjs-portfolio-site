@@ -7,7 +7,6 @@ import styles from './Home.module.css'
 export default function Home() {
   return (
     <>
-      {/* <Meta /> */}
       <div className={styles.wrapper}>
         <Hero
           title="CANOPUS"

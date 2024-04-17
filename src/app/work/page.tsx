@@ -1,49 +1,13 @@
-'use client'
+import { Metadata } from 'next'
 
-import Hero from '../../components/Hero/Hero'
-import LinkButton from '../../components/LinkButton/LinkButton'
-import Meta from '../../components/meta'
+import Works from './Work'
+
+export const metadata: Metadata = {
+  title: 'Work Page - Canopus Portfolio Site',
+  description:
+    'CANOPUSの制作実績は、外部サイト「RESUME（レジュメ）」にて一部公開中。正社員・フリーランス時代の案件は契約上の理由から非公開ですが、限定公開している実績の閲覧を希望される方は、本サイトまたはRESUMEのコンタクトフォームよりお問い合わせください。お客様のニーズに合わせた最適なソリューションをご提案いたします。',
+}
 
 export default function Home() {
-  const workLink = 'https://www.resume.id/canopus/works'
-  const formLink =
-    'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
-
-  return (
-    <>
-      {/* <Meta pageTitle="Work" pageDesc="制作実績紹介ページ" /> */}
-      <Hero title="Work" subtitle="制作実績紹介" />
-
-      <p>
-        制作実績につきましては下記のサイトにて閲覧できます。
-        <br />
-        ※外部サイト【RESUME（レジュメ）】へ移動します。
-      </p>
-      <div
-        style={{
-          marginTop: 'var(--space-xs)',
-          marginInline: 'auto',
-          width: 'fit-content',
-        }}>
-        <LinkButton href={workLink} text="制作実績公開サイトへ" />
-      </div>
-      <br />
-      <br />
-      <br />
-      <p>
-        ※正社員時代に制作したサイト、フリーランス時代に制作させていただいたサイトの多くは契約上一般公開できません。
-        <br />
-        限定的に公開している制作サイトの閲覧を希望する方はお手数おかけしますが本サイトのコンタクトフォームもしくはRESUME（レジュメ）サイトのコンタクトフォームより閲覧希望の旨をお伝えください。
-      </p>
-
-      <div
-        style={{
-          marginTop: 'var(--space-xs)',
-          marginInline: 'auto',
-          width: 'fit-content',
-        }}>
-        <LinkButton href={formLink} text="コンタクトフォームへ" />
-      </div>
-    </>
-  )
+  return <Works />
 }

@@ -1,36 +1,13 @@
-'use client'
+import { Metadata } from 'next'
 
-import useSWR from 'swr'
+import Blog from './Blog'
 
-import BlogList from '../../components/BlogList/BlogList'
-import Hero from '../../components/Hero/Hero'
-
-interface Post {
-  id: number
-  path: string
-  title: string
-  published_at: string
-  body_updated_at?: string
+export const metadata: Metadata = {
+  title: 'Blog Page - Canopus Portfolio Site',
+  description:
+    'Zennで技術系の記事を執筆中。React、Next.js、HTML/CSS、JavaScriptなどのフロントエンド開発に関する知見や経験をシェア。各記事のタイトルからZennの該当ページへ直接アクセス可能。初心者からベテランまで幅広く役立つ情報を提供しています。',
 }
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json())
 export default function Home() {
-  const { data, error } = useSWR<{ articles: Post[] }>('/api/zenn', fetcher)
-
-  if (error) return <div>Failed to load blog posts.</div>
-  if (!data) return null
-
-  const posts = data.articles
-
-  return (
-    <>
-      {/* <Meta pageTitle="Work" pageDesc="制作実績紹介ページ" /> */}
-      <Hero title="Blog" subtitle="技術系中心に記事を投稿しています" />
-      <p>
-        私がzennに投稿した記事を表示しています。
-        各記事をクリックするとzennへ遷移します。
-      </p>
-      <BlogList posts={posts} />
-    </>
-  )
+  return <Blog />
 }
