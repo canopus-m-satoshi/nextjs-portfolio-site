@@ -1,0 +1,17 @@
+.description {
+  margin-top: var(--space-md);
+}
+@media (min-width: 768px) {
+  .description {
+    margin-top: 0;
+  }
+}
+
+.title {
+  margin-block: var(--space-md) var(--space-xs);
+}
+@media (min-width: 768px) {
+  .title {
+    margin-top: 0;
+  }
+}

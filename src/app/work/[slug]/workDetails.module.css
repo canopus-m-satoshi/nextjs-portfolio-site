@@ -1,0 +1,6 @@
+@media (min-width: 768px) {
+  .details {
+    display: flex;
+    gap: var(--space-sm);
+  }
+}

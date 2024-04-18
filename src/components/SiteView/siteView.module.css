@@ -1,0 +1,11 @@
+.img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+@media (min-width: 768px) {
+  .img {
+    min-width: 600px;
+  }
+}
