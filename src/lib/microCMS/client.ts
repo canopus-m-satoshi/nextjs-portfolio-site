@@ -2,8 +2,8 @@ import { createClient } from 'microcms-js-sdk'
 import { NextResponse } from 'next/server'
 
 export const client = createClient({
-  serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
-  apiKey: process.env.MICROCMS_API_KEY,
+  serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN as string,
+  apiKey: process.env.MICROCMS_API_KEY as string,
 })
 
 export const getWorkDetailsBySlug = async (id: string) => {

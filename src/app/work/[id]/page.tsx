@@ -25,7 +25,7 @@ export default async function WorkDetails({
       <Hero title={title} subtitle={lead} isSmallFont={true} />
       <CategoryList tech={tech} />
       <div className={styles.details}>
-        <SiteView img={img} alt={title} />
+        {img && <SiteView img={img} alt={title} />}
         <Description role={role} url={url} description={description} />
       </div>
 

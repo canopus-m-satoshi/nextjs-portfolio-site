@@ -7,17 +7,13 @@ import LinkButton from '../../components/LinkButton/LinkButton'
 import WorkList from '../../components/WorkList/WorkList'
 import { WorkApiResponse } from '../../types/work'
 
-const workLink = 'https://www.resume.id/canopus/works'
 const formLink =
   'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 const Work = () => {
-  const { data, error } = useSWR<{ work: WorkApiResponse }>(
-    '/api/work',
-    fetcher,
-  )
+  const { data, error } = useSWR<WorkApiResponse>('/api/work', fetcher)
 
   return (
     <>

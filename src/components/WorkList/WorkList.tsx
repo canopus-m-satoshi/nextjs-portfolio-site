@@ -16,7 +16,7 @@ export default function WorkList({ data }: Props) {
         <ul className={styles.list}>
           {contents.map((work) => (
             <li key={work.id}>
-              <Link href={`/work/${work.id}`}>
+              <Link href={`/work/${work.id}`} className={styles.link}>
                 <h2>{work.title}</h2>
                 <p>{work.lead}</p>
               </Link>

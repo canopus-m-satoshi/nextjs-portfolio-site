@@ -2,11 +2,11 @@ import { NextResponse } from 'next/server'
 
 import { client } from '../../../lib/microCMS/client'
 
-export async function GET(limit = 10) {
+export async function GET(limit = 30) {
   try {
     const data = await client.get({
       endpoint: 'work',
-      limit: limit,
+      queries: { limit: limit },
     })
 
     return NextResponse.json(data)
