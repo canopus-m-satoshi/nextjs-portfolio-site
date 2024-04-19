@@ -5,7 +5,11 @@ export type Work = {
   tech: string[]
   role: string[]
   url: string
-  img: string
+  img: {
+    url: string
+    height: string
+    width: string
+  }
   description: string
 }
 

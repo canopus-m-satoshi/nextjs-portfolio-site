@@ -6,6 +6,7 @@
 
 @media (min-width: 768px) {
   .img {
-    min-width: 600px;
+    min-width: 400px;
+    padding-bottom: unset;
   }
 }

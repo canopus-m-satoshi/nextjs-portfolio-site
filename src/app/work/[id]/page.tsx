@@ -11,7 +11,8 @@ export default async function WorkDetails({
   params: { id: string }
 }) {
   const res = await getWorkDetailsBySlug(params.id)
-  const { role, url, tech, title, lead, description } = res
+  const { role, url, tech, title, lead, description, img } = res
+  console.log('🚀 ~ img:', img)
 
   if (!res) return
 
@@ -20,7 +21,7 @@ export default async function WorkDetails({
       <Hero title={title} subtitle={lead} isSmallFont={true} />
       <CategoryList tech={tech} />
       <div className={styles.details}>
-        <SiteView />
+        <SiteView img={img} alt={title} />
         <Description role={role} url={url} description={description} />
       </div>
     </>
