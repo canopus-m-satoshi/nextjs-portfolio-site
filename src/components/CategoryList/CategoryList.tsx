@@ -1,15 +1,20 @@
 import styles from './CategoryList.module.css'
 
-const CategoryList = () => {
+type Props = {
+  tech: string[]
+}
+
+const CategoryList = ({ tech }: Props) => {
   return (
-    <ul className={styles.lists}>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>SASS</li>
-      <li>Javascript</li>
-      <li>jQuery</li>
-      <li>PHP</li>
-    </ul>
+    <div>
+      {tech && (
+        <ul className={styles.lists}>
+          {tech.map((el, index) => (
+            <li key={index}>{el}</li>
+          ))}
+        </ul>
+      )}
+    </div>
   )
 }
 export default CategoryList

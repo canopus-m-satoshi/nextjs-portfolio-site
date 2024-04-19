@@ -11,15 +11,17 @@ export default async function WorkDetails({
   params: { id: string }
 }) {
   const res = await getWorkDetailsBySlug(params.id)
-  console.log('🚀 ~ res:', res)
+  const { role, url, tech, title, lead, description } = res
+
+  if (!res) return
 
   return (
     <>
-      <Hero title={res.title} subtitle={res.lead} isSmallFont={true} />
-      <CategoryList />
+      <Hero title={title} subtitle={lead} isSmallFont={true} />
+      <CategoryList tech={tech} />
       <div className={styles.details}>
         <SiteView />
-        <Description />
+        <Description role={role} url={url} description={description} />
       </div>
     </>
   )

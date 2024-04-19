@@ -2,8 +2,8 @@ export type Work = {
   id: string
   title: string
   lead: string
-  teck: string
-  role: string
+  tech: string[]
+  role: string[]
   url: string
   img: string
   description: string
