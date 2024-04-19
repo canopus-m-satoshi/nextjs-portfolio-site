@@ -10,16 +10,11 @@ export default async function WorkDetails({
 }: {
   params: { id: string }
 }) {
-  const capitalizeFirstLetter = (text: string) => {
-    return text.charAt(0).toUpperCase() + text.slice(1)
-  }
-
   const res = await getWorkDetailsBySlug(params.id)
   console.log('🚀 ~ res:', res)
 
   return (
     <>
-      {/* <Hero title={capitalizeFirstLetter(params.id)} subtitle={'テスト投稿'} /> */}
       <Hero title={res.title} subtitle={res.lead} isSmallFont={true} />
       <CategoryList />
       <div className={styles.details}>

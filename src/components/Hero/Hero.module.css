@@ -14,6 +14,10 @@
   color: var(--sub);
 }
 
+.smallFont {
+  font-size: var(--heading1);
+}
+
 .subtitleCenter {
   font-size: var(--small-heading3);
   text-align: center;

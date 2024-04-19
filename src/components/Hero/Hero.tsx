@@ -6,6 +6,7 @@ type Props = {
   subtitle: string
   textCenter?: boolean
   glitchTitle?: boolean
+  isSmallFont?: boolean
 }
 
 const Hero = ({
@@ -13,12 +14,16 @@ const Hero = ({
   subtitle,
   textCenter = false,
   glitchTitle = false,
+  isSmallFont = false,
 }: Props) => {
   return (
     <div className={styles.flexContainer}>
       <div className={styles.text}>
         <h1
-          className={glitchTitle ? styles.glitchTitle : styles.normalTitle}
+          className={`
+            ${glitchTitle ? styles.glitchTitle : styles.normalTitle}
+            ${isSmallFont && styles.smallFont}
+          `}
           data-text={title}>
           {title}
         </h1>
