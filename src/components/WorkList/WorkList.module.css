@@ -1,0 +1,32 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-xs);
+  margin-block: var(--space-xs);
+}
+
+.list li {
+  color: var(--black);
+  background-color: var(--sub);
+  border-radius: 10px;
+  padding: var(--space-xs);
+  transition-duration: 0.3s;
+}
+
+/* ホバー */
+@media (hover: hover) {
+  .list li:hover {
+    color: var(--white);
+    background-color: var(--accent);
+  }
+}
+
+@media (hover: none) {
+  .list li {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .list li:active {
+    color: var(--accent);
+  }
+}

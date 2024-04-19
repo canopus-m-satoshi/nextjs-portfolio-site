@@ -1,6 +1,3 @@
-import Image from 'next/image'
-
-import eyecatch from '../../images/my_picture.jpg'
 import styles from './Description.module.css'
 
 const Description = () => {
