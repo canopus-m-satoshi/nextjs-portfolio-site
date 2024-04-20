@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import Works from './Work'
+import Work from './Work'
 
 export const metadata: Metadata = {
   title: 'Work Page - Canopus Portfolio Site',
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  return <Works />
+      <Work />
 }
