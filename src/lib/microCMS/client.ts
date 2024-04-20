@@ -18,3 +18,31 @@ export const getWorkDetailsBySlug = async (id: string) => {
     return NextResponse.json({ error: 'Failed to Get Data' }, error)
   }
 }
+
+export const getRestrictedWork = async (limit = 30) => {
+  try {
+    const data = await client.get({
+      endpoint: 'work/',
+      queries: { limit: limit, filters: 'isRestricted[equals]true' },
+    })
+
+    return data
+  } catch (error: any) {
+    console.error('Error in /api/work:', error)
+    return NextResponse.json({ error: 'Failed to fetch data' }, { status: 500 })
+  }
+}
+
+export const getPublicWork = async (limit = 30) => {
+  try {
+    const data = await client.get({
+      endpoint: 'work/',
+      queries: { limit: limit, filters: 'isRestricted[equals]false' },
+    })
+
+    return data
+  } catch (error: any) {
+    console.error('Error in /api/work:', error)
+    return NextResponse.json({ error: 'Failed to fetch data' }, { status: 500 })
+  }
+}
