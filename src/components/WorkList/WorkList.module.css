@@ -13,6 +13,25 @@
   border-radius: 10px;
   padding: var(--space-xs);
   transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.lock {
+  position: relative;
+  background-color: var(--gray-50);
+}
+
+.icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 0.8em;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: red;
+  background-color: #fff;
+  transition-duration: 0.3s;
 }
 
 /* ホバー */
@@ -20,6 +39,16 @@
   .link:hover {
     color: var(--white);
     background-color: var(--accent);
+  }
+
+  .link.lock:hover {
+    color: initial;
+    background-color: initial;
+  }
+
+  .link.lock:hover .icon {
+    width: 90px;
+    height: 90px;
   }
 }
 

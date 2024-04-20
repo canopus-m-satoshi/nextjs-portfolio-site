@@ -16,7 +16,6 @@ export default async function WorkDetails({
 }) {
   const res = await getWorkDetailsBySlug(params.id)
   const { role, url, tech, title, lead, description, img } = res
-  console.log('🚀 ~ img:', img)
 
   if (!res) return
 
