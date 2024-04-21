@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 
 import Hero from '../../components/Hero/Hero'
 import LinkButton from '../../components/LinkButton/LinkButton'
+import styles from './Work.module.css'
 
 export const metadata: Metadata = {
   title: 'Work Page - Canopus Portfolio Site',
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero title="Work" subtitle="制作実績紹介" />
-      <p className="">
+      <p>
         正社員/フリーランス時代の制作実績の閲覧にはIDとパスワードが必要となります。
         <br />
         ページ閲覧希望の方はコンタクトページよりお問い合わせください。
@@ -24,6 +24,11 @@ export default function Home() {
         href="/work/restricted"
         text="正社員/フリーランス時代の制作実績を閲覧希望の方はこちら"
       />
+
+      <p className={styles.spacingLg}>
+        個人で開発したアプリの紹介ページはこちらから閲覧ください。 <br />
+        React, Next.jsを使用したアプリ開発をしております。
+      </p>
       <LinkButton
         href="/work/public"
         text="個人開発の制作実績を閲覧希望の方はこちら"
