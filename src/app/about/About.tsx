@@ -2,10 +2,11 @@
 
 import Image from 'next/image'
 
-import Accordion from '../../components/Accordion/Accordion'
-import Hero from '../../components/Hero/Hero'
-import InViewMotion from '../../components/InViewMotion/InViewMotion'
-import eyecatch from '../../images/my_picture.jpg'
+import Accordion from '@/components/Accordion/Accordion'
+import Hero from '@/components/Hero/Hero'
+import InViewMotion from '@/components/InViewMotion/InViewMotion'
+import { eyecatchLocal } from '@/lib/constants'
+
 import styles from './About.module.css'
 
 const from = 2020
@@ -21,7 +22,7 @@ const About = () => {
 
       <figure className={styles.eyecatch}>
         <Image
-          src={eyecatch}
+          src={eyecatchLocal}
           alt=" "
           priority
           placeholder="blur"

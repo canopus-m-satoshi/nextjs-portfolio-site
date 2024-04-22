@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
 
-import Hero from '../../components/Hero/Hero'
-import LinkButton from '../../components/LinkButton/LinkButton'
+import Hero from '@/components/Hero/Hero'
+import LinkButton from '@/components/LinkButton/LinkButton'
+
 import styles from './Work.module.css'
 
 export const metadata: Metadata = {

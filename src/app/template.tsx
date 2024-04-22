@@ -3,7 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 
-import { useTransitionFix } from '../lib/useTransitionFix'
+import { useTransitionFix } from '@/lib/useTransitionFix'
 
 export default function Template({ children }: { children: React.ReactNode }) {
   const transitionCallback = useTransitionFix()

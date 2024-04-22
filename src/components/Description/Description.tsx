@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { VscMultipleWindows } from 'react-icons/vsc'
 
-import { Work } from '../../types/work'
+import { Work } from '@/types/work'
+
 import styles from './Description.module.css'
 
 type Props = Pick<Work, 'role' | 'url' | 'description'>

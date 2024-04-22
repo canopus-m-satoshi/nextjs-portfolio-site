@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
-import { Work } from '../../types/work'
+import { Work } from '@/types/work'
+
 import styles from './siteView.module.css'
 
 type Props = {

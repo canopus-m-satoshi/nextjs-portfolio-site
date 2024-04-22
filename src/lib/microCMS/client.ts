@@ -1,7 +1,7 @@
 import { createClient } from 'microcms-js-sdk'
 import { NextResponse } from 'next/server'
 
-import { WorkApiResponse } from '../../types/work'
+import { WorkApiResponse } from '@/types/work'
 
 export const client = createClient({
   serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN as string,

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-import { client } from '../../../lib/microCMS/client'
+import { client } from '@/lib/microCMS/client'
 
 export async function GET(limit = 30) {
   try {

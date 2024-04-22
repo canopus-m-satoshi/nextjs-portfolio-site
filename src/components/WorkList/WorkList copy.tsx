@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { CiLock } from 'react-icons/ci'
 
-import { WorkApiResponse } from '../../types/work'
+import { WorkApiResponse } from '@/types/work'
+
 import styles from './WorkList.module.css'
 
 type Props = {

@@ -1,5 +1,5 @@
-import WorkContents from '../../../../components/WorkContents/WorkContents'
-import { getRestrictedWork } from '../../../../lib/microCMS/client'
+import WorkContents from '@/components/WorkContents/WorkContents'
+import { getRestrictedWork } from '@/lib/microCMS/client'
 
 export default async function Home() {
   const data = await getRestrictedWork()

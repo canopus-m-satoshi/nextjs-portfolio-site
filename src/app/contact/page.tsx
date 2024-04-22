@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
-import Hero from '../../components/Hero/Hero'
-import LinkButton from '../../components/LinkButton/LinkButton'
+import Hero from '@/components/Hero/Hero'
+import LinkButton from '@/components/LinkButton/LinkButton'
 
 export const metadata: Metadata = {
   title: 'Contact Page - Canopus Portfolio Site',
