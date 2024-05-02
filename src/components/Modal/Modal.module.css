@@ -27,7 +27,7 @@
   right: auto;
   bottom: auto;
   transform: translate(-50%, -50%);
-  padding: var(--space-xs);
+  padding: var(--space-xs) var(--space-xs) var(--space-sm);
   min-width: 80%;
   border-radius: 4px;
   background: var(--white);
