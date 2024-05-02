@@ -10,7 +10,6 @@ import { basicFormSchema, BasicFormValues } from '@/lib/formSchema'
 import styles from './Form.module.css'
 
 export default function Form() {
-  const [isAuthorized, setIsAuthorized] = useState(false)
   const [responseError, setResponseError] = useState('')
 
   const {
