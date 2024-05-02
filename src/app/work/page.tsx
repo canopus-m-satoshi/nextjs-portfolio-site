@@ -1,7 +1,9 @@
 import { Metadata } from 'next'
 
+import Form from '@/components/Form/Form'
 import Hero from '@/components/Hero/Hero'
 import LinkButton from '@/components/LinkButton/LinkButton'
+import Modal from '@/components/Modal/Modal'
 
 import styles from './Work.module.css'
 
@@ -20,6 +22,8 @@ export default function Home() {
         <br />
         ページ閲覧希望の方はコンタクトページよりお問い合わせください。
       </p>
+
+      <Form />
 
       <LinkButton
         href="/work/restricted"
