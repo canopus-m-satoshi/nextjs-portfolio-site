@@ -12,25 +12,12 @@ type Props = {
 
 ReactModal.setAppElement('html')
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    transform: 'translate(-50%, -50%)',
-    paddingInline: '20px',
-  },
-  overlay: {
-    zIndex: 5,
-  },
-}
-
 const Modal = ({ title, isOpen, handleCloseModal }: Props) => {
   return (
     <ReactModal
       isOpen={isOpen}
-      style={customStyles}
+      className={styles.modal}
+      overlayClassName={styles.overlay}
       contentLabel="モーダル"
       onRequestClose={handleCloseModal}>
       <h3 className={styles.title}>{title}</h3>
