@@ -45,6 +45,7 @@ export default function Form() {
         type="text"
         placeholder="User ID"
         className={styles.input}
+        autoComplete="username"
       />
       {errors.userId && (
         <p role="alert" className={styles.alert}>
@@ -57,17 +58,14 @@ export default function Form() {
         type="password"
         placeholder="Password"
         className={styles.input}
+        autoComplete="current-password"
       />
       {errors.password && (
         <p role="alert" className={styles.alert}>
           {errors.password.message}
         </p>
       )}
-      {/* {authError && (
-        <p role="alert" className={styles.alert}>
-          {authError}
-        </p>
-      )} */}
+
       <input type="submit" className={styles.button} />
       {responseError && (
         <p role="alert" className={styles.alert}>

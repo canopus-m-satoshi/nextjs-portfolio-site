@@ -7,6 +7,8 @@
   margin: 0 auto;
   padding: var(--space-xs);
   border-radius: 8px;
+  background-color: var(--sub);
+  margin-top: 1em;
 }
 
 .input {
@@ -22,10 +24,10 @@
   width: 100%;
   padding: 0.75rem;
   margin-top: 1em;
-  border: none;
+  border: 1px solid var(--accent);
   border-radius: 4px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--accent);
+  color: var(--white);
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -33,7 +35,7 @@
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #fd2600;
 }
 
 .alert {
