@@ -30,7 +30,7 @@ export default async function WorkDetails({
       </div>
 
       <div className={styles.backButton}>
-        <LinkButton href="/work" text="Back" isLeftArrow />
+        <LinkButton href="/work/public" text="Back" isLeftArrow />
       </div>
     </>
   )

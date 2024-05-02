@@ -9,9 +9,11 @@ type Props = {
 }
 
 export default function WorkListItem({ work }: Props) {
+  const WorkType = work.isRestricted ? 'restricted' : 'public'
+
   return (
     <li key={work.id}>
-      <Link href={`/work/${work.id}`} className={styles.link}>
+      <Link href={`/work/${WorkType}/${work.id}`} className={styles.link}>
         <h2>{work.title}</h2>
         <p>{work.lead}</p>
       </Link>
