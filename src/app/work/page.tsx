@@ -1,10 +1,9 @@
 import { Metadata } from 'next'
 
-import Form from '@/components/Form/Form'
 import Hero from '@/components/Hero/Hero'
 import LinkButton from '@/components/LinkButton/LinkButton'
-import Modal from '@/components/Modal/Modal'
 
+import Work from './Work'
 import styles from './Work.module.css'
 
 export const metadata: Metadata = {
@@ -17,18 +16,8 @@ export default function Home() {
   return (
     <>
       <Hero title="Work" subtitle="制作実績紹介" />
-      <p>
-        正社員/フリーランス時代の制作実績の閲覧にはIDとパスワードが必要となります。
-        <br />
-        ページ閲覧希望の方はコンタクトページよりお問い合わせください。
-      </p>
 
-      <Form />
-
-      <LinkButton
-        href="/work/restricted"
-        text="正社員/フリーランス時代の制作実績を閲覧希望の方はこちら"
-      />
+      <Work />
 
       <p className={styles.spacingLg}>
         個人で開発したアプリの紹介ページはこちらから閲覧ください。 <br />

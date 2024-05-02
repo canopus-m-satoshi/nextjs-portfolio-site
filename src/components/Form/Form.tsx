@@ -27,7 +27,6 @@ export default function Form() {
         window.location.href = '/work/restricted'
       } else if (res.status === 401) {
         setError('root.serverError', {
-          // rootレベルのエラーを設定
           type: 'custom',
           message: 'IDかパスワードが異なります',
         })

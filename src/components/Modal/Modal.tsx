@@ -2,9 +2,12 @@ import { RxCross2 } from 'react-icons/rx'
 import ReactModal from 'react-modal'
 
 import Form from '../Form/Form'
+import styles from './Modal.module.css'
 
 type Props = {
+  title: string
   isOpen: boolean
+  handleCloseModal: () => void
 }
 
 ReactModal.setAppElement('html')
@@ -15,23 +18,24 @@ const customStyles = {
     left: '50%',
     right: 'auto',
     bottom: 'auto',
-    marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    paddingInline: '10px',
+    paddingInline: '20px',
+  },
+  overlay: {
+    zIndex: 5,
   },
 }
 
-const Modal = ({ isOpen }: Props) => {
-  const handleCloseModal = () => {}
-
+const Modal = ({ title, isOpen, handleCloseModal }: Props) => {
   return (
     <ReactModal
       isOpen={isOpen}
       style={customStyles}
-      contentLabel="フォームモーダル"
+      contentLabel="モーダル"
       onRequestClose={handleCloseModal}>
-      <button onClick={handleCloseModal} className="absolute top-2 right-2">
-        <RxCross2 />
+      <h3 className={styles.title}>{title}</h3>
+      <button onClick={handleCloseModal} className={styles.closeButton}>
+        <RxCross2 className={styles.closeIcon} />
       </button>
 
       <Form />

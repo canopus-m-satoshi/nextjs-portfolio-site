@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest } from 'next/server'
 
 const BASIC_AUTH_USER = process.env.BASIC_AUTH_USER
 const BASIC_AUTH_PASSWORD = process.env.BASIC_AUTH_PASSWORD
@@ -9,8 +9,7 @@ export async function POST(request: NextRequest) {
   const valid = userId === BASIC_AUTH_USER && password === BASIC_AUTH_PASSWORD
 
   if (valid) {
-    const redirectUrl = new URL('/work/restricted', request.url)
-    return NextResponse.redirect(redirectUrl)
+    return new Response(null, { status: 200 })
   } else {
     return new Response(
       JSON.stringify({ message: 'IDかパスワードが異なります' }),

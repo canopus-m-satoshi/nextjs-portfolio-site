@@ -1,0 +1,21 @@
+.closeButton {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 4px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.closeIcon {
+  font-size: 1.5em;
+}
+
+.title {
+  padding-top: var(--space-xs);
+  font-size: var(--small-heading2);
+  font-weight: bold;
+  color: var(--black);
+}
