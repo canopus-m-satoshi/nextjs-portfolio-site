@@ -1,8 +1,6 @@
-import Link from 'next/link'
-import { CiLock } from 'react-icons/ci'
-
 import { WorkApiResponse } from '@/types/work'
 
+import WorkListItem from '../WorkListItem/WorkListItem'
 import styles from './WorkList.module.css'
 
 type Props = {
@@ -17,12 +15,7 @@ export default function WorkList({ data }: Props) {
       {data && contents && (
         <ul className={styles.list}>
           {contents.map((work) => (
-            <li key={work.id}>
-              <Link href={`/work/${work.id}`} className={styles.link}>
-                <h2>{work.title}</h2>
-                <p>{work.lead}</p>
-              </Link>
-            </li>
+            <WorkListItem key={work.id} work={work} />
           ))}
         </ul>
       )}
