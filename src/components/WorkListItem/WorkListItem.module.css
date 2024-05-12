@@ -1,0 +1,28 @@
+.link {
+  display: block;
+  height: 100%;
+  color: var(--black);
+  background-color: var(--sub);
+  border-radius: 10px;
+  padding: var(--space-xs);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+/* ホバー */
+@media (hover: hover) {
+  .link:hover {
+    color: var(--white);
+    background-color: var(--accent);
+  }
+}
+
+@media (hover: none) {
+  .link {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .link:active {
+    color: var(--accent);
+  }
+}

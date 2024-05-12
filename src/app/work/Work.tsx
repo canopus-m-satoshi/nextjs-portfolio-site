@@ -1,47 +1,48 @@
 'use client'
 
-import Hero from '../../components/Hero/Hero'
-import LinkButton from '../../components/LinkButton/LinkButton'
+import { useEffect, useState } from 'react'
 
-const workLink = 'https://www.resume.id/canopus/works'
-const formLink =
-  'https://docs.google.com/forms/d/e/1FAIpQLSfrhmjGSxyxl_faEIuHG7FXqChLmOXky2SPzzDHxj5g5WSo1g/viewform?usp=sf_link'
+import Button from '@/components/Button/Button'
+import LinkButton from '@/components/LinkButton/LinkButton'
+import Modal from '@/components/Modal/Modal'
 
-const Work = () => {
+type Props = {
+  hasCookie: boolean
+}
+
+const Work = ({ hasCookie }: Props) => {
+  const [isOpen, setIsOpen] = useState(false)
+  const [isHasCookie, setIsHasCookie] = useState(false)
+
+  const text = '正社員/フリーランス時代の制作実績を閲覧希望の方はこちら'
+
+  const handleOpenModal = () => {
+    setIsOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsOpen(false)
+  }
+
+  useEffect(() => {
+    setIsHasCookie(hasCookie)
+  }, [hasCookie])
+
   return (
     <>
-      <Hero title="Work" subtitle="制作実績紹介" />
-
       <p>
-        制作実績につきましては下記のサイトにて閲覧できます。
+        正社員/フリーランス時代の制作実績の閲覧にはIDとパスワードが必要となります。
         <br />
-        ※外部サイト【RESUME（レジュメ）】へ移動します。
-      </p>
-      <div
-        style={{
-          marginTop: 'var(--space-xs)',
-          marginInline: 'auto',
-          width: 'fit-content',
-        }}>
-        <LinkButton href={workLink} text="制作実績公開サイトへ" />
-      </div>
-      <br />
-      <br />
-      <br />
-      <p>
-        ※正社員時代に制作したサイト、フリーランス時代に制作させていただいたサイトの多くは契約上一般公開できません。
-        <br />
-        限定的に公開している制作サイトの閲覧を希望する方はお手数おかけしますが本サイトのコンタクトフォームもしくはRESUME（レジュメ）サイトのコンタクトフォームより閲覧希望の旨をお伝えください。
+        ページ閲覧希望の方はコンタクトページよりお問い合わせください。
       </p>
 
-      <div
-        style={{
-          marginTop: 'var(--space-xs)',
-          marginInline: 'auto',
-          width: 'fit-content',
-        }}>
-        <LinkButton href={formLink} text="コンタクトフォームへ" />
-      </div>
+      {isHasCookie ? (
+        <LinkButton href="/work/restricted" text={text} />
+      ) : (
+        <Button text={text} onClick={handleOpenModal} />
+      )}
+
+      <Modal isOpen={isOpen} handleCloseModal={handleCloseModal} title={text} />
     </>
   )
 }

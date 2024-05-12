@@ -1,5 +1,5 @@
-import Hero from '../components/Hero/Hero'
-import LinkButton from '../components/LinkButton/LinkButton'
+import Hero from '@/components/Hero/Hero'
+import LinkButton from '@/components/LinkButton/LinkButton'
 
 export default function NotFound() {
   return (

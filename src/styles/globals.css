@@ -19,7 +19,6 @@
   --small-heading3: calc(var(--small-heading2) * 0.86); /* 12-23px */
 
   /* スペース（余白・間隔） */
-  /* スペース（余白・間隔） */
   --space-xs: clamp(1rem, 0.75rem + 0.75vw, 1.5rem); /* 16-24px */
   --space-sm: calc(var(--space-xs) * 1.5); /* 24-36px */
   --space-md: calc(var(--space-xs) * 2); /* 32-48px */
@@ -35,6 +34,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
   font-size: var(--body);
+  overflow-x: clip;
 }
 
 main {

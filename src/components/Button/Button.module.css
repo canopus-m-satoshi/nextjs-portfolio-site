@@ -1,0 +1,83 @@
+.button {
+  transition-duration: 300ms;
+  font-weight: 700;
+  display: flex;
+  width: fit-content;
+  column-gap: 0.3em;
+  align-items: center;
+  position: relative;
+  padding: var(--space-xs) 0 var(--space-xs) 33px;
+  transition: all 0.3s;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: none;
+}
+
+.button span {
+  position: relative;
+  padding: calc(var(--display) * 0.05);
+  z-index: 1;
+  color: var(--white);
+  background: var(--black);
+  transition: all 0.3s;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(var(--display) * 0.05);
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.button svg {
+  transition: all 0.3s;
+}
+
+/* ホバー */
+@media (hover: hover) {
+  .button:hover {
+    color: var(--accent);
+  }
+
+  .button:hover span {
+    color: var(--accent);
+  }
+
+  .button:hover::after {
+    width: 55px;
+    height: 55px;
+    left: calc(var(--display) * 0.1);
+    border: 2px solid var(--white);
+  }
+
+  .button:hover svg {
+    color: var(--accent);
+  }
+}
+
+@media (hover: none) {
+  .button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .button:active {
+    color: var(--accent);
+  }
+}
+
+.ReactModal__Overlay {
+  z-index: 5;
+}

@@ -1,6 +1,11 @@
 import { Metadata } from 'next'
+import { cookies } from 'next/headers'
 
-import Works from './Work'
+import Hero from '@/components/Hero/Hero'
+import LinkButton from '@/components/LinkButton/LinkButton'
+
+import Work from './Work'
+import styles from './Work.module.css'
 
 export const metadata: Metadata = {
   title: 'Work Page - Canopus Portfolio Site',
@@ -9,5 +14,23 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  return <Works />
+  const cookieStore = cookies()
+  const hasCookie = cookieStore.has('isAuthorized')
+
+  return (
+    <>
+      <Hero title="Work" subtitle="制作実績紹介" />
+
+      <Work hasCookie={hasCookie} />
+
+      <p className={styles.spacingLg}>
+        個人で開発したアプリの紹介ページはこちらから閲覧ください。 <br />
+        React, Next.jsを使用したアプリ開発をしております。
+      </p>
+      <LinkButton
+        href="/work/public"
+        text="個人開発の制作実績を閲覧希望の方はこちら"
+      />
+    </>
+  )
 }
