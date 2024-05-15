@@ -42,7 +42,7 @@ export default function Form() {
         {...register('userId')}
         id="userId"
         type="text"
-        placeholder="User ID"
+        placeholder="ID"
         className={styles.input}
         autoComplete="username"
       />

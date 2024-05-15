@@ -14,7 +14,7 @@ const Work = ({ hasCookie }: Props) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isHasCookie, setIsHasCookie] = useState(false)
 
-  const text = '正社員/フリーランス時代の制作実績を閲覧希望の方はこちら'
+  const text = '閲覧希望の方はIDとパスワードを入力してください'
 
   const handleOpenModal = () => {
     setIsOpen(true)
