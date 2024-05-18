@@ -21,9 +21,7 @@ export const getWorkDetailsBySlug = async (id: string) => {
   }
 }
 
-export const getRestrictedWork = async (
-  limit = 30,
-): Promise<WorkApiResponse> => {
+export const getRestrictedWork = async (limit = 30) => {
   try {
     const data = await client.get({
       endpoint: 'work/',
