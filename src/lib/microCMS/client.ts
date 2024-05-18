@@ -10,9 +10,11 @@ export const client = createClient({
 
 export const getWorkDetailsBySlug = async (id: string) => {
   try {
-    const data = await client.get({
+    const res = await client.get({
       endpoint: `work/${id}`,
     })
+
+    const data = { ...res, thumbPc: res.thumb_pc, thumbSp: res.thumb_sp }
 
     return data
   } catch (error: any) {
@@ -21,9 +23,7 @@ export const getWorkDetailsBySlug = async (id: string) => {
   }
 }
 
-export const getRestrictedWork = async (
-  limit = 30,
-): Promise<WorkApiResponse> => {
+export const getRestrictedWork = async (limit = 30) => {
   try {
     const data = await client.get({
       endpoint: 'work/',

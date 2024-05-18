@@ -1,7 +1,12 @@
 export type Work = {
   description: string
   id: string
-  img: {
+  thumbPc: {
+    height: string
+    url: string
+    width: string
+  }
+  thumbSp: {
     height: string
     url: string
     width: string

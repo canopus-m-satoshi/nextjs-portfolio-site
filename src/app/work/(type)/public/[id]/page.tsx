@@ -1,37 +1,28 @@
-import Link from 'next/link'
-import { FaChevronLeft } from 'react-icons/fa6'
-
-import CategoryList from '@/components/CategoryList/CategoryList'
-import Description from '@/components/Description/Description'
-import Hero from '@/components/Hero/Hero'
-import LinkButton from '@/components/LinkButton/LinkButton'
-import SiteView from '@/components/SiteView/SiteView'
+import WorkDetails from '@/components/WorkDetails/WorkDetails'
 import { getWorkDetailsBySlug } from '@/lib/microCMS/client'
+import { Work } from '@/types/work'
 
-import styles from './workDetails.module.css'
-
-export default async function WorkDetails({
+export default async function WorkDetailsPage({
   params,
 }: {
   params: { id: string }
 }) {
-  const res = await getWorkDetailsBySlug(params.id)
-  const { role, url, tech, title, lead, description, img } = res
+  const res: Work = await getWorkDetailsBySlug(params.id)
+  const { role, url, tech, title, lead, description, thumbPc, thumbSp } = res
 
-  if (!res) return
+  if (!res) return null
 
   return (
-    <>
-      <Hero title={title} subtitle={lead} isSmallFont={true} />
-      <CategoryList tech={tech} />
-      <div className={styles.details}>
-        {img && <SiteView img={img} alt={title} />}
-        <Description role={role} url={url} description={description} />
-      </div>
-
-      <div className={styles.backButton}>
-        <LinkButton href="/work/public" text="Back" isLeftArrow />
-      </div>
-    </>
+    <WorkDetails
+      role={role}
+      url={url}
+      tech={tech}
+      title={title}
+      lead={lead}
+      description={description}
+      thumbPc={thumbPc}
+      thumbSp={thumbSp}
+      backPath="/work/public"
+    />
   )
 }

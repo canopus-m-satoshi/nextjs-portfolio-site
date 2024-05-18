@@ -1,12 +1,30 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 1010px) {
+  .flex {
+    width: 670px;
+  }
+}
+
 .img {
   position: relative;
   width: 100%;
+  max-width: 450px;
   padding-bottom: 100%;
+}
+@media (min-width: 1010px) {
+  .img {
+    width: 400px;
+  }
 }
 
 @media (min-width: 768px) {
-  .img {
-    min-width: 400px;
-    padding-bottom: unset;
+  .mockupSp {
+    max-width: 250px;
+    width: 50%;
   }
 }
