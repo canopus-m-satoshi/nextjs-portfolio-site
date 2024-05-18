@@ -1,6 +1,3 @@
-import Link from 'next/link'
-import { FaChevronLeft } from 'react-icons/fa6'
-
 import CategoryList from '@/components/CategoryList/CategoryList'
 import Description from '@/components/Description/Description'
 import Hero from '@/components/Hero/Hero'
@@ -16,7 +13,7 @@ export default async function WorkDetails({
   params: { id: string }
 }) {
   const res = await getWorkDetailsBySlug(params.id)
-  const { role, url, tech, title, lead, description, img } = res
+  const { role, url, tech, title, lead, description, thumbPc, thumbSp } = res
 
   if (!res) return
 
@@ -25,7 +22,7 @@ export default async function WorkDetails({
       <Hero title={title} subtitle={lead} isSmallFont={true} />
       <CategoryList tech={tech} />
       <div className={styles.details}>
-        {img && <SiteView img={img} alt={title} />}
+        <SiteView thumbPc={thumbPc} thumbSp={thumbSp} alt={title} />
         <Description role={role} url={url} description={description} />
       </div>
 
