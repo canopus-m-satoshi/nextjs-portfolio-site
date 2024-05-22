@@ -15,14 +15,14 @@ interface Props {
 
 export default function BlogList({ posts }: Props) {
   return (
-    <ul className={styles.lists}>
+    <ul className={styles.list}>
       {posts.map((post) => (
         <li key={post.id}>
           <Link
             href={`https://zenn.dev/${post.path}`}
             target="blank"
             className={styles.link}>
-            <p className={styles.title}>{post.title}</p>
+            <h2 className={styles.title}>{post.title}</h2>
             <p>
               投稿日：
               <ConvertDate dateISO={post.published_at} />
