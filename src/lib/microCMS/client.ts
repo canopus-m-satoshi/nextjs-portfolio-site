@@ -1,7 +1,6 @@
+import camelcaseKeys from 'camelcase-keys'
 import { createClient } from 'microcms-js-sdk'
 import { NextResponse } from 'next/server'
-
-import { WorkApiResponse } from '@/types/work'
 
 export const client = createClient({
   serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN as string,
@@ -14,7 +13,7 @@ export const getWorkDetailsBySlug = async (id: string) => {
       endpoint: `work/${id}`,
     })
 
-    const data = { ...res, thumbPc: res.thumb_pc, thumbSp: res.thumb_sp }
+    const data = camelcaseKeys(res, { deep: true })
 
     return data
   } catch (error: any) {

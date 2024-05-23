@@ -1,4 +1,5 @@
 import axios from 'axios'
+import camelcaseKeys from 'camelcase-keys'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
@@ -10,7 +11,9 @@ export async function GET() {
       },
     })
 
-    return NextResponse.json(response.data)
+    const data = camelcaseKeys(response.data, { deep: true })
+
+    return NextResponse.json(data)
   } catch (error) {
     console.error('Error fetching Zenn articles:', error)
     return NextResponse.json(
