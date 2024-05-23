@@ -1,41 +1,41 @@
 import Link from 'next/link'
 
+import { Zenn } from '@/types/zenn'
+
 import ConvertDate from '../ConvertDate/ConvertDate'
 import styles from './BlogList.module.css'
 
-interface Props {
-  posts: {
-    id: number
-    path: string
-    title: string
-    published_at: string
-    body_updated_at?: string
-  }[]
+type Props = {
+  posts: Zenn[]
 }
 
 export default function BlogList({ posts }: Props) {
   return (
     <ul className={styles.list}>
-      {posts.map((post) => (
-        <li key={post.id}>
-          <Link
-            href={`https://zenn.dev/${post.path}`}
-            target="blank"
-            className={styles.link}>
-            <h2 className={styles.title}>{post.title}</h2>
-            <p>
-              投稿日：
-              <ConvertDate dateISO={post.published_at} />
-            </p>
-            {post.body_updated_at && (
+      {posts.map((post) => {
+        const { id, path, title, publishedAt, bodyUpdatedAt, likedCount } = post
+        return (
+          <li key={id}>
+            <Link
+              href={`https://zenn.dev/${path}`}
+              target="blank"
+              className={styles.link}>
+              <h2 className={styles.title}>{title}</h2>
               <p>
-                更新日：
-                <ConvertDate dateISO={post.body_updated_at} />
+                投稿日：
+                <ConvertDate dateISO={publishedAt} />
               </p>
-            )}
-          </Link>
-        </li>
-      ))}
+              {bodyUpdatedAt && (
+                <p>
+                  更新日：
+                  <ConvertDate dateISO={bodyUpdatedAt} />
+                </p>
+              )}
+              <p>いいね：{likedCount}</p>
+            </Link>
+          </li>
+        )
+      })}
     </ul>
   )
 }

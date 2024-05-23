@@ -4,20 +4,12 @@ import useSWR from 'swr'
 
 import BlogList from '@/components/BlogList/BlogList'
 import Hero from '@/components/Hero/Hero'
-
-interface Post {
-  id: number
-  path: string
-  title: string
-  published_at: string
-  body_updated_at?: string
-}
+import { Zenn } from '@/types/zenn'
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 const Blog = () => {
-  const { data, error } = useSWR<{ articles: Post[] }>('/api/zenn', fetcher)
-
+  const { data, error } = useSWR<{ articles: Zenn[] }>('/api/zenn', fetcher)
   if (error) return <div>Failed to load blog posts.</div>
   if (!data) return null
 
