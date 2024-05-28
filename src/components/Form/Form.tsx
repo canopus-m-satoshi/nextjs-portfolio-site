@@ -41,7 +41,7 @@ export default function Form() {
       <input
         {...register('userId')}
         id="userId"
-        type="text"
+        type="password"
         placeholder="ID"
         className={styles.input}
         autoComplete="username"
