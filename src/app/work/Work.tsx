@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 
 import Button from '@/components/Button/Button'
-import Form from '@/components/Form/Form'
 import LinkButton from '@/components/LinkButton/LinkButton'
 import Modal from '@/components/Modal/Modal'
 
@@ -36,7 +35,6 @@ const Work = ({ hasCookie }: Props) => {
         <br />
         ページ閲覧希望の方はコンタクトページよりお問い合わせください。
       </p>
-      <Form />
 
       {isHasCookie ? (
         <LinkButton href="/work/restricted" text={text} />
