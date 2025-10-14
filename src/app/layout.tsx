@@ -8,8 +8,7 @@ import Header from '@/components/Header/Header'
 
 export const metadata: Metadata = {
   title: 'Canopus Portfolio Site',
-  description:
-    '「CANOPUS」という屋号で都内にて活動しているフリーランスのフロントエンドエンジニアです。2020年よりエンジニアとしての活動を始めさまざまなWebサイト制作の案件に携わってきました。LPやWordpressを利用したWebサイト制作だけでなく、 アプリ開発も対応可能ですのでお気軽にご相談ください。',
+  description: 'フルスタックエンジニアになりたいフロントエンドエンジニア',
   alternates: {
     canonical: '/',
     languages: {

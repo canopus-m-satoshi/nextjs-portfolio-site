@@ -11,7 +11,7 @@ export default function Home() {
       <div className={styles.wrapper}>
         <Hero
           title="CANOPUS"
-          subtitle="Portfolio Site of Satoshi Matsushima"
+          subtitle="Portfolio Site of CANOPUS"
           textCenter
           glitchTitle
         />
@@ -22,15 +22,7 @@ export default function Home() {
           }
         `}</style>
         <div className="lead">
-          <p>
-            「CANOPUS」という屋号で都内にて活動しているフリーランスのフロントエンドエンジニアです。
-          </p>
-          <p>
-            2020年よりエンジニアとしての活動を始めさまざまなWebサイト制作の案件に携わってきました。
-            <br />
-            LPやWordpressを利用したWebサイト制作だけでなく、
-            アプリ開発も対応可能ですのでお気軽にご相談ください。
-          </p>
+          <p>フルスタックエンジニアになりたいフロントエンドエンジニア</p>
         </div>
 
         <div className={styles.links}>
