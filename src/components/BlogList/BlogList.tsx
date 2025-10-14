@@ -31,7 +31,6 @@ export default function BlogList({ posts }: Props) {
                   <ConvertDate dateISO={bodyUpdatedAt} />
                 </p>
               )}
-              <p>いいね：{likedCount}</p>
             </Link>
           </li>
         )
