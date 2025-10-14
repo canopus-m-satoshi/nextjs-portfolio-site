@@ -52,15 +52,6 @@ export default function Template({ children }: { children: React.ReactNode }) {
             transition: { duration: 0.9, delay: 0.1 },
           },
         }
-      case '/contact':
-        return {
-          out: { opacity: 0, scale: 0.8, transition: { duration: 0.75 } },
-          in: {
-            opacity: 1,
-            scale: 1,
-            transition: { duration: 0.9, delay: 0.1 },
-          },
-        }
       default:
         return {
           out: { opacity: 0, transition: { duration: 0.75 } },

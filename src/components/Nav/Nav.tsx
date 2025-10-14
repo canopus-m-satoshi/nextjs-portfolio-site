@@ -53,11 +53,6 @@ const Nav = () => {
             Work
           </Link>
         </li>
-        <li>
-          <Link href="/contact" onClick={closeNav}>
-            Contact
-          </Link>
-        </li>
       </ul>
     </nav>
   )

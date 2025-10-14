@@ -8,19 +8,8 @@
 .links {
   padding: calc(var(--display) * 0.5) 0;
   gap: var(--space-sm);
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  place-items: center;
   width: 100%;
-}
-
-.links > span {
-  flex: 0 0 40%;
-}
-
-@media (min-width: 768px) {
-  .links > span {
-    flex: auto;
-  }
 }

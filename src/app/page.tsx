@@ -29,7 +29,6 @@ export default function Home() {
           <LinkButton href="/about" text="About" />
           <LinkButton href="/blog" text="Blog" />
           <LinkButton href="/work" text="Work" />
-          <LinkButton href="/contact" text="Contact" />
         </div>
       </div>
     </>
