@@ -39,9 +39,14 @@ const About = () => {
               都内で活動しているエンジニアで、{currentYear}年{currentMonth}
               月でエンジニア歴{pastYear}年目になります。
               <br />
-              都内のWeb制作会社で勤務後、2021年に独立しフリーランスとなりました。LPやWordpressを用いたサイト制作を得意としています。
+              都内のWeb制作会社でエンジニアのキャリアをスタートし2021年に独立しフリーランスとなりました。
               <br />
-              React/Next.jsなどモダンフロントエンド技術にも強い関心があり学習中です。
+              2024年より正社員としてWeb開発会社に転職し、フロントエンドエンジニアとしてSaaS開発に従事しています。
+            </p>
+            <p>
+              Reactを用いたアプリ開発が得意です。
+              <br />
+              専門はフロントエンドのみですが今後はバックエンドの知識もつけてフルスタックに活躍できるエンジニアになるのが目標です。
             </p>
           </div>
         </InViewMotion>
@@ -76,35 +81,27 @@ const About = () => {
                   <li>jQuery : 5years</li>
                   <li>React.js : 3years</li>
                   <li>Next.js : 3years</li>
-                  <li>Typescript : 1year</li>
+                  <li>Typescript : 2year</li>
                   <li>Redux (RTK) : 1year</li>
+                  <li>zustand : 1year</li>
                   <li>Tailwind CSS : 1year</li>
+                  <li>Shadcn UI : 1year</li>
                   <li>daisy UI : 1year</li>
                   <li>Chakra UI : 1year</li>
                   <li>Mantine UI : 1year</li>
                   <li>styled-components : 1year</li>
                 </ul>
-
-                <h5 className={styles.noteTitle}>Note</h5>
-                <p className={styles.note}>
-                  HTML&CSS(Sass),JavaScript,jQueryを用いたサイト制作の経験が豊富にあります。
-                  <br />
-                  それ以外の言語は独学・個人でのアプリ制作などの経験があります。
-                </p>
               </div>
               <div className={styles.skillBoxItem}>
                 <h4 className={styles.titleSmall}>Backend Skills</h4>
 
                 <ul className={styles.list}>
-                  <li>PHP : 3years</li>
-                  <li>Express : 2months</li>
+                  <li>Express : 6months</li>
+                  <li>Ruby : 3months</li>
+                  <li>Ruby on Rails : 3months</li>
                 </ul>
-
-                <h5 className={styles.noteTitle}>Note</h5>
-                <p className={styles.note}>
-                  Wordpressの実務経験がありPHPも扱えます。Expressはまだまだ勉強中です。
-                </p>
               </div>
+
               <div className={styles.skillBoxItem}>
                 <h4 className={styles.titleSmall}>CMS</h4>
                 <ul className={styles.list}>
@@ -112,47 +109,16 @@ const About = () => {
                   <li>microCMS : 3months</li>
                   <li>GraphCMS : 1months</li>
                 </ul>
-
-                <h5 className={styles.noteTitle}>Note</h5>
-                <p className={styles.note}>
-                  Wordpressを用いたサイト制作、既存サイトのリニューアルなど様々な案件を経験してきました。
-                  <br />
-                  それ以外は独学・個人でのアプリ制作などの経験があります。
-                </p>
               </div>
 
               <div className={styles.skillBoxItem}>
-                <h4 className={styles.titleSmall}>Tool</h4>
+                <h4 className={styles.titleSmall}>AI Tools</h4>
 
                 <ul className={styles.list}>
-                  <li>Photoshop : 2years</li>
-                  <li>Illustrator : 2years</li>
-                  <li>Adobe XD : 2months</li>
-                  <li>Figma : 2months</li>
+                  <li>ChatGPT : 4years</li>
+                  <li>Claude : 3years</li>
+                  <li>Cluade Code : 6months</li>
                 </ul>
-
-                <h5 className={styles.noteTitle}>Note</h5>
-                <p className={styles.note}>
-                  Adobe
-                  XD、Figmaで自身のポートフォリオサイトをデザインした経験があります。それ以外のデザインツールについては、デザインカンプとして使用経験があります。
-                </p>
-              </div>
-
-              <div className={styles.skillBoxItem}>
-                <h4 className={styles.titleSmall}>Others</h4>
-
-                <ul className={styles.list}>
-                  <li>Windows OS : 7years</li>
-                  <li>Mac OS : 5years</li>
-                  <li>Firebase : 1year</li>
-                  <li>Gulp : 1year</li>
-                  <li>Webpack : 3months</li>
-                </ul>
-
-                <h5 className={styles.noteTitle}>Note</h5>
-                <p className={styles.note}>
-                  Windows OS、Mac OS共に実務経験があります。
-                </p>
               </div>
             </div>
           </div>
@@ -198,8 +164,8 @@ const About = () => {
                   </p>
                 </li>
                 <li>
-                  <p>2024 MAY</p>
-                  <p>Web制作からReactを使ったWeb開発へ転向を目指す。</p>
+                  <p>2024 July</p>
+                  <p>Web開発会社へ正社員として転職。</p>
                 </li>
               </ul>
             </Accordion>
